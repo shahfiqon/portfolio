@@ -10,6 +10,57 @@
   overflow: hidden;
 }
 
+/* ============================================
+   DESKTOP - Grid layout with sidebar
+   ============================================ */
+
+.dashboardPage {
+  display: grid;
+  grid-template-columns: 240px minmax(0, 1fr);
+  gap: 2.5rem;
+  padding: 0.2rem;
+  position: relative;
+  transition: grid-template-columns 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* When sidebar is collapsed, adjust grid columns */
+.dashboardPage.collapsed {
+  grid-template-columns: 80px minmax(0, 1fr);
+}
+
+.dashboardContent {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  position: relative;
+  z-index: 1;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* ============================================
+   MOBILE - Full width, sidebar is overlay
+   ============================================ */
+
+@media (max-width: 996px) {
+  .dashboardPage {
+    display: block;
+    grid-template-columns: none;
+    padding: 1rem;
+    transition: none;
+  }
+  
+  .dashboardPage.collapsed {
+    grid-template-columns: none;
+  }
+
+  .dashboardContent {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
 @media screen and (max-width: 996px) {
   .heroBanner {
     padding: 2rem;

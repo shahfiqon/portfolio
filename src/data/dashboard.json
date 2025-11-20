@@ -1,61 +1,85 @@
 {
-    
-    "nav": [
-        { "icon": "home", "label": "Home", "href": "/" },
-        { "icon": "user", "label": "Profile", "href": "/about" },
-        { "icon": "file", "label": "Blogs", "href": "/blog" },
-        { "icon": "bar", "label": "Stats", "href": "/analytics" }
-   
-],
-    "hero": {
-      "title": "Hi, I'm Phoneix",
-      "subtitle": "Senior Software Engineer",
-      "ctaText": "Get in touch",
-      "ctaLink": "/docs/intro"
+  "nav": [
+    { "icon": "home", "label": "Home", "href": "/" },
+    { "icon": "user", "label": "Profile", "href": "/about" },
+    { "icon": "file", "label": "Blogs", "href": "/blog" },
+    { "icon": "bar", "label": "Stats", "href": "/analytics" }
+  ],
+  "hero": {
+    "title": "Hi, I'm Phoneix",
+    "subtitle": "Senior Software Engineer",
+    "ctaText": "Get in touch",
+    "ctaLink": "/docs/intro"
+  },
+  "kpis": [
+    { "label": "Years Experience", "value": "8+" },
+    { "label": "Projects Delivered", "value": "24" },
+    { "label": "Talks Given", "value": "12" },
+    { "label": "Team Members Mentored", "value": "15" },
+    { "label": "Open Source Contributions", "value": "180+" },
+    { "label": "Tech Stack Migrations", "value": "5" },
+    { "label": "Code Reviews", "value": "1.2k+" },
+    { "label": "Active Users Impacted", "value": "500k+" }
+  ],
+  "experience": [
+    {
+      "date": "2025",
+      "role": "Senior Frontend Engineer",
+      "company": "xyz Corp",
+      "summary": "Led dashboard revamp, grew engagement 35%.",
+      "tags": ["React", "Docusaurus", "Leadership"]
     },
-    "kpis": [
-      { "label": "Years Experience", "value": "8+" },
-      { "label": "Projects Delivered", "value": "24" },
-      { "label": "Talks Given", "value": "12" }
-    ],
-    "experience": [
-      {
-        "date": "2025",
-        "role": "Senior Frontend Engineer",
-        "company": "xyz Corp",
-        "summary": "Led dashboard revamp, grew engagement 35%.",
-        "tags": ["React", "Docusaurus", "Leadership"]
-      },
-      {
-        "date": "2022",
-        "role": "Product Engineer",
-        "company": "InnovateX",
-        "summary": "Built analytics tooling, shipped custom chart kit.",
-        "tags": ["Charts", "DataViz"]
-      }
-    ],
-    "charts": {
-      "skills": [
-        { "name": "React", "value": 90 },
-        { "name": "Docusaurus", "value": 80 },
-        { "name": "Data Viz", "value": 85 }
-      ],
-      "velocity": [
-        { "month": "Jan", "stories": 8 },
-        { "month": "Feb", "stories": 11 },
-        { "month": "Mar", "stories": 10 }
-      ]
+    {
+      "date": "2022",
+      "role": "Product Engineer",
+      "company": "InnovateX",
+      "summary": "Built analytics tooling, shipped custom chart kit.",
+      "tags": ["Charts", "DataViz"]
     },
-    "projects": [
-      {
-        "title": "Design System",
-        "description": "Component library powering 4 products.",
-        "link": "https://github.com/you/design-system"
-      },
-      {
-        "title": "Analytics Portal",
-        "description": "Real-time KPI dashboards for execs.",
-        "link": "https://github.com/you/analytics-portal"
-      }
+    {
+      "date": "2020",
+      "role": "Frontend Developer",
+      "company": "TechFlow Solutions",
+      "summary": "Architected e-commerce platform handling 50k daily transactions.",
+      "tags": ["TypeScript", "Next.js", "E-commerce"]
+    },
+    {
+      "date": "2019",
+      "role": "Full Stack Developer",
+      "company": "CloudBridge Systems",
+      "summary": "Developed microservices infrastructure, reduced API latency by 60%.",
+      "tags": ["Node.js", "Docker", "AWS"]
+    },
+    {
+      "date": "2017",
+      "role": "Junior Software Engineer",
+      "company": "Digital Ventures",
+      "summary": "Contributed to mobile-first web apps, improved lighthouse scores to 95+.",
+      "tags": ["Vue.js", "Performance", "PWA"]
+    }
+  ],
+  "charts": {
+    "skills": [
+      { "name": "React", "value": 90 },
+      { "name": "Docusaurus", "value": 80 },
+      { "name": "Data Visualization", "value": 85 }
+    ],
+    "velocity": [
+      { "month": "Jan", "stories": 8 },
+      { "month": "Feb", "stories": 11 },
+      { "month": "Mar", "stories": 10 }
     ]
-  }
+  },
+  "projects": [
+    {
+      "title": "Design System",
+      "description": "Component library powering 4 products.",
+      "link": "https://github.com/you/design-system"
+    },
+    {
+      "title": "Analytics Portal",
+      "description": "Real-time KPI dashboards for execs.",
+      "link": "https://github.com/you/analytics-portal"
+    }
+  ]
+}
