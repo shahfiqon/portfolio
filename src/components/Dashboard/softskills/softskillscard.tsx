@@ -1,30 +1,15 @@
-import RadialBarChartComp from "../../Charts/RadialBarChartComp";
-import data from "../../../data/dashboard.json";
 import React, { useEffect, useState } from "react";
 import { useColorMode } from "@docusaurus/theme-common";
+import DonutChartComp from "../../Charts/DonutChartComp";
+import data from "../../../data/dashboard.json";
 
-//types
-export interface KPIItem {
-  label: string;
-  value: string;
-}
-
-export interface KPIChartData {
-  name: string;
+export interface SoftSkill {
+  skill: string;
   value: number;
 }
 
-// Convert "8+" → 8
-const sanitizeValue = (v: string) => parseInt(v.replace(/\D/g, ""), 10);
-
-const kpiChartData: KPIChartData[] = (data.kpis as KPIItem[]).map((kpi) => ({
-  name: kpi.label,
-  value: sanitizeValue(kpi.value),
-}));
-
-const KPICard: React.FC = () => {
+const SoftskillCard: React.FC = () => {
   const { colorMode } = useColorMode();
-
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
@@ -34,21 +19,24 @@ const KPICard: React.FC = () => {
     return () => window.removeEventListener("resize", update);
   }, []);
 
+  const softSkills = data.softskills as SoftSkill[];
+
+  /** Card wrapper */
   const cardStyle: React.CSSProperties = {
     padding: "12px",
     borderRadius: "12px",
     border: `1px solid ${colorMode === "dark" ? "#333" : "#e5e7eb"}`,
-    background: colorMode === "dark" ? "#262626" : "#fff",
+    background: colorMode === "dark" ? "#262626" : "#ffffff",
     boxShadow:
       colorMode === "dark"
         ? "0px 1px 3px rgba(0,0,0,0.3)"
         : "0px 1px 3px rgba(0,0,0,0.1)",
     width: "100%",
     maxWidth: isMobile ? "90vw" : "30vw",
-    height: "fit-content",
     transition: "all 0.3s ease",
   };
 
+  /** Title */
   const headerStyle: React.CSSProperties = {
     fontSize: "14px",
     textAlign: "center",
@@ -57,13 +45,24 @@ const KPICard: React.FC = () => {
     color: colorMode === "dark" ? "#ffffff" : "#111827",
   };
 
+  /** Chart wrapper (block layout, no flex) */
+  const chartContainerStyle: React.CSSProperties = {
+    height: "100%",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+  };
+
   return (
     <div style={cardStyle}>
-      <h2 style={headerStyle}>KPI Overview</h2>
+      <h2 style={headerStyle}>Soft Skills</h2>
 
-      <RadialBarChartComp data={kpiChartData} nameKey="name" dataKey="value" />
+      {/* Donut Chart */}
+      <div style={chartContainerStyle}>
+        <DonutChartComp data={softSkills} nameKey="skill" valueKey="value" />
+      </div>
     </div>
   );
 };
 
-export default KPICard;
+export default SoftskillCard;

@@ -1,9 +1,10 @@
 {
   "nav": [
-    { "icon": "home", "label": "Home", "href": "/" },
-    { "icon": "user", "label": "Profile", "href": "/about" },
-    { "icon": "file", "label": "Blogs", "href": "/blog" },
-    { "icon": "bar", "label": "Stats", "href": "/analytics" }
+    { "label": "HOME", "href": "/" },
+    { "label": "TECH", "href": "/tech" },
+    { "label": "BLOG", "href": "/blog" },
+    { "label": "GITHUB", "href": "https://github.com/shahfiqon" },
+    { "label": "CONTACT", "href": "/contact" }
   ],
   "hero": {
     "title": "Hi, I'm Phoneix",
@@ -51,18 +52,29 @@
       "tags": ["Node.js", "Docker", "AWS"]
     },
     {
-      "date": "2017",
+      "date": "2015",
       "role": "Junior Software Engineer",
       "company": "Digital Ventures",
       "summary": "Contributed to mobile-first web apps, improved lighthouse scores to 95+.",
       "tags": ["Vue.js", "Performance", "PWA"]
     }
   ],
+
+  "softskills": [
+    { "skill": "Communication", "value": 25 },
+    { "skill": "Teamwork", "value": 20 },
+    { "skill": "Problem Solving", "value": 22 },
+    { "skill": "Adaptability", "value": 12 },
+    { "skill": "Leadership", "value": 13 },
+    { "skill": "Creativity", "value": 8 }
+  ],
   "charts": {
     "skills": [
-      { "name": "React", "value": 90 },
-      { "name": "Docusaurus", "value": 80 },
-      { "name": "Data Visualization", "value": 85 }
+      { "name": "Python", "value": 90 },
+      { "name": "SQL", "value": 85 },
+      { "name": "Power BI", "value": 75 },
+      { "name": "Tableau", "value": 60 },
+      { "name": "JavaScript", "value": 70 }
     ],
     "velocity": [
       { "month": "Jan", "stories": 8 },

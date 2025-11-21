@@ -1,7 +1,7 @@
 [
-{ "skill": "Python", "value": 90 },
-{ "skill": "SQL", "value": 85 },
-{ "skill": "Power BI", "value": 75 },
-{ "skill": "Tableau", "value": 60 },
-{ "skill": "JavaScript", "value": 70 }
+  { "skill": "Python", "value": 90 },
+  { "skill": "SQL", "value": 85 },
+  { "skill": "Power BI", "value": 75 },
+  { "skill": "Tableau", "value": 60 },
+  { "skill": "JavaScript", "value": 70 }
 ]

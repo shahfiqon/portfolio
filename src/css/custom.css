@@ -13,12 +13,14 @@
   --ifm-color-primary-light: #33925d;
   --ifm-color-primary-lighter: #359962;
   --ifm-color-primary-lightest: #3cad6e;
+  --mint-underline: #a7e7df; /* soft mint */
+  --mint-active: #14b8a6;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
-[data-theme='dark'] {
+[data-theme="dark"] {
   --ifm-color-primary: #25c2a0;
   --ifm-color-primary-dark: #21af90;
   --ifm-color-primary-darker: #1fa588;
@@ -27,4 +29,127 @@
   --ifm-color-primary-lighter: #32d8b4;
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+.navbar {
+  background: white;
+  border-bottom: 1px solid #e5e7eb;
+  box-shadow: none;
+}
+
+[data-theme="dark"] .navbar {
+  background: #1b1b1d;
+  border-bottom-color: #2d2d2d;
+}
+
+/* Brand/Logo styling */
+.navbar__brand {
+  font-weight: 600;
+  font-size: 1.125rem;
+}
+
+.navbar__logo {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+/* Navigation items container */
+.navbar__items {
+  gap: 0.5rem;
+}
+
+.navbar__item {
+  font-size: 12px;
+  letter-spacing: 0.05em;
+}
+
+/* Navigation links base style */
+.navbar__link {
+  color: #374151;
+  margin: 5px 10px;
+  padding: 5px 10px;
+  position: relative;
+  overflow: hidden;
+  transition: color 0.3s ease;
+  background: transparent;
+}
+
+/* Underline for ALL links (lighter for non-active) */
+.navbar__link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--mint-underline);
+  transition: background 0.3s ease;
+}
+
+/* Active link - darker underline, NO FILL when idle */
+.navbar__link--active {
+  color: #065f46 !important;
+}
+
+.navbar__link--active::after {
+  background: var(--mint-active);
+  /* Darker green underline */
+  height: 3px; /* Slightly thicker */
+}
+
+/* Background fill animation from bottom to top (ONLY on hover) */
+.navbar__link::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 0;
+  background: var(--mint-underline); /* match underline */
+  transition: height 0.3s ease;
+  z-index: -1;
+  /* border-radius: 6px; */
+}
+
+/* Hover effect - fill from bottom to top */
+.navbar__link:hover::before {
+  height: 100%;
+}
+
+.navbar__link:hover {
+  color: #111827;
+  text-decoration: none;
+}
+
+/* Active link hover - darker fill */
+.navbar__link--active:hover::before {
+  background: #10b981;
+}
+[data-theme="dark"] {
+  color: #ffff;
+  --mint-underline: #5ff3d3; /* bright mint for dark mode */
+  --mint-active: #2adac0; /* active mint for dark mode */
+}
+/* Dark mode styles */
+[data-theme="dark"] .navbar__link {
+  color: #d1d5db;
+}
+[data-theme="dark"] .navbar__link:hover {
+  color: #f9fafb;
+}
+[data-theme="dark"] .navbar__link--active {
+  color: #10b981 !important;
+}
+
+/* Remove Docusaurus default shadows */
+.navbar--fixed-top {
+  box-shadow: none;
+}
+
+/* Mobile responsive */
+@media (max-width: 996px) {
+  .navbar__link {
+    padding: 0.5rem 1rem;
+  }
 }

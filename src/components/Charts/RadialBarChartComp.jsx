@@ -6,53 +6,29 @@ import {
   Tooltip,
   ResponsiveContainer,
 } from "recharts";
-import { motion } from "framer-motion";
 import { useColorMode } from "@docusaurus/theme-common";
 
 const COLORS = [
-  "#6366f1", // Indigo
-  "#14b8a6", // Teal
-  "#f59e0b", // Amber
-  "#ef4444", // Red
-  "#3b82f6", // Blue
-  "#8b5cf6", // Purple
-  "#10b981", // Green
-  "#ec4899", // Pink
+  "#c8ff00ff",
+  "#14b8a6",
+  "#f59e0b",
+  "#ef4444",
+  "#3b82f6",
+  "#8b5cf6",
+  "#10b981",
+  "#ec4899",
 ];
 
 export default function RadialBarChartComp({ data, dataKey, nameKey }) {
   const { colorMode } = useColorMode();
 
-  // Normalize data to 0-100 scale for radial chart
+  // Normalize data to 0–100 scale
   const maxValue = Math.max(...data.map((item) => item[dataKey]));
   const normalizedData = data.map((item, index) => ({
     ...item,
     normalizedValue: (item[dataKey] / maxValue) * 100,
     fill: COLORS[index % COLORS.length],
   }));
-
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.1,
-        delayChildren: 0.2,
-      },
-    },
-  };
-
-  const itemVariants = {
-    hidden: { opacity: 0, scale: 0.8 },
-    visible: {
-      opacity: 1,
-      scale: 1,
-      transition: {
-        duration: 0.6,
-        ease: "easeOut",
-      },
-    },
-  };
 
   const tooltipBg = colorMode === "dark" ? "#1f1f1f" : "#ffffff";
   const tooltipBorder = colorMode === "dark" ? "#444" : "#ccc";
@@ -62,22 +38,16 @@ export default function RadialBarChartComp({ data, dataKey, nameKey }) {
       ? "0 2px 4px rgba(0,0,0,0.5)"
       : "0 2px 4px rgba(0,0,0,0.1)";
 
+  const legendTextColor = colorMode === "dark" ? "#e5e7eb" : "#1f2937";
+
   return (
-    <motion.div
-      variants={containerVariants}
-      initial="hidden"
-      animate="visible"
-      style={{ width: "100%", height: "400px" }}
-    >
-      <motion.div
-        variants={itemVariants}
-        style={{ width: "100%", height: "100%" }}
-      >
-        <ResponsiveContainer width="100%" height={400}>
+    <div style={{ width: "100%", height: "fit-content" }}>
+      <div style={{ width: "100%", height: "100%" }}>
+        <ResponsiveContainer width="100%" height="320">
           <RadialBarChart
             data={normalizedData}
-            innerRadius="20%"
-            outerRadius="90%"
+            innerRadius="2%"
+            outerRadius="70%"
             startAngle={90}
             endAngle={-270}
           >
@@ -96,17 +66,13 @@ export default function RadialBarChartComp({ data, dataKey, nameKey }) {
                 if (active && payload && payload.length) {
                   const itemData = payload[0].payload;
                   return (
-                    <motion.div
-                      initial={{ opacity: 0, scale: 0.8 }}
-                      animate={{ opacity: 1, scale: 1 }}
-                      transition={{ duration: 0.2 }}
+                    <div
                       style={{
                         background: tooltipBg,
                         padding: "8px 12px",
                         border: `1px solid ${tooltipBorder}`,
                         borderRadius: "4px",
                         boxShadow: tooltipShadow,
-                        transition: "all 0.2s ease",
                       }}
                     >
                       <p
@@ -129,7 +95,7 @@ export default function RadialBarChartComp({ data, dataKey, nameKey }) {
                       >
                         {itemData[dataKey]}
                       </p>
-                    </motion.div>
+                    </div>
                   );
                 }
                 return null;
@@ -137,7 +103,47 @@ export default function RadialBarChartComp({ data, dataKey, nameKey }) {
             />
           </RadialBarChart>
         </ResponsiveContainer>
-      </motion.div>
-    </motion.div>
+
+        {/* Static Custom Legend */}
+        <div
+          style={{
+            display: "flex",
+            flexWrap: "wrap",
+            justifyContent: "center",
+            gap: "12px",
+          }}
+        >
+          {normalizedData.map((item) => (
+            <div
+              key={item[nameKey]}
+              style={{
+                display: "flex",
+                alignItems: "center",
+                gap: "2px",
+                cursor: "default",
+              }}
+            >
+              <div
+                style={{
+                  width: "8px",
+                  height: "8px",
+                  borderRadius: "3px",
+                  background: item.fill,
+                }}
+              />
+              <span
+                style={{
+                  fontSize: "9px",
+                  fontWeight: 500,
+                  color: legendTextColor,
+                }}
+              >
+                {item[nameKey]}: {item[dataKey]}
+              </span>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
   );
 }
