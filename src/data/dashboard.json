@@ -7,10 +7,10 @@
     { "label": "CONTACT", "href": "/contact" }
   ],
   "hero": {
-    "title": "Hi, I'm Phoneix",
-    "subtitle": "Senior Software Engineer",
-    "ctaText": "Get in touch",
-    "ctaLink": "/docs/intro"
+    "title": "Hi, I'm Phoenix",
+    "subtitle": "Senior Software Engineer specializing in building scalable systems and exceptional user experiences. 8+ years crafting impactful solutions across the full stack.",
+    "ctaText": "View Projects",
+    "ctaLink": "/projects"
   },
   "kpis": [
     { "label": "Years Experience", "value": "8+" },

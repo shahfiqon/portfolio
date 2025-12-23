@@ -1,0 +1,84 @@
+.sidebar {
+  position: fixed;
+  left: 2rem;
+  bottom: 0;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.socialLinks {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  align-items: center;
+}
+
+.socialLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  color: var(--ifm-color-emphasis-700);
+  background-color: var(--ifm-card-background-color);
+  border-radius: 12px;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  transition: all 0.3s ease;
+  text-decoration: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.socialLink:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
+  color: var(--hover-color);
+  border-color: var(--hover-color);
+  background-color: color-mix(in srgb, var(--hover-color) 10%, var(--ifm-card-background-color));
+}
+
+.socialLink:active {
+  transform: translateY(-2px);
+}
+
+.divider {
+  width: 2px;
+  height: 100px;
+  background: linear-gradient(
+    to bottom,
+    var(--ifm-color-emphasis-300),
+    transparent
+  );
+}
+
+/* Hide on mobile and tablets */
+@media (max-width: 768px) {
+  .sidebar {
+    display: none;
+  }
+}
+
+/* Adjust position for medium screens */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .sidebar {
+    left: 1rem;
+  }
+  
+  .socialLink {
+    width: 42px;
+    height: 42px;
+  }
+}
+
+/* Dark mode adjustments */
+[data-theme="dark"] .socialLink {
+  background-color: var(--ifm-color-emphasis-100);
+  border-color: var(--ifm-color-emphasis-300);
+}
+
+[data-theme="dark"] .socialLink:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+

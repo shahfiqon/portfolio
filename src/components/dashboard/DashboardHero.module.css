@@ -76,75 +76,33 @@
   transform: translateX(4px);
 }
 
-/* Hero Visual */
+/* Hero Visual with 3D Background */
 .heroVisual {
   width: 100%;
   height: 220px;
   border-radius: 20px;
-  background: linear-gradient(135deg, #5f5dbd 0%, #8e8cf2 50%, #b8b6ff 100%);
+  background: linear-gradient(135deg, rgba(95, 93, 189, 0.1) 0%, rgba(142, 140, 242, 0.15) 50%, rgba(184, 182, 255, 0.1) 100%);
   position: relative;
   overflow: hidden;
   order: 2;
   box-shadow: 0 20px 40px rgba(95, 93, 189, 0.2);
 }
 
-.ring1,
-.ring2,
-.ring3 {
-  position: absolute;
-  border: 2px solid rgba(255, 255, 255, 0.3);
-  border-radius: 50%;
-  animation: pulse 4s infinite ease-out;
+.fallbackGradient {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(95, 93, 189, 0.1) 0%, rgba(142, 140, 242, 0.15) 50%, rgba(184, 182, 255, 0.1) 100%);
+  position: relative;
 }
 
-.ring1 {
-  inset: 25%;
-  animation-delay: 0s;
+/* Dark mode adjustments for hero visual */
+[data-theme="dark"] .heroVisual {
+  background: linear-gradient(135deg, rgba(95, 93, 189, 0.2) 0%, rgba(142, 140, 242, 0.25) 50%, rgba(184, 182, 255, 0.2) 100%);
+  box-shadow: 0 20px 40px rgba(95, 93, 189, 0.4);
 }
 
-.ring2 {
-  inset: 15%;
-  animation-delay: 1.3s;
-}
-
-.ring3 {
-  inset: 35%;
-  animation-delay: 2.6s;
-}
-
-.glowOrb {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 60px;
-  height: 60px;
-  background: rgba(255, 255, 255, 0.25);
-  border-radius: 50%;
-  filter: blur(20px);
-  animation: glow 3s infinite alternate ease-in-out;
-}
-
-@keyframes pulse {
-  0% {
-    transform: scale(0.8);
-    opacity: 0.7;
-  }
-  100% {
-    transform: scale(1.5);
-    opacity: 0;
-  }
-}
-
-@keyframes glow {
-  from {
-    opacity: 0.4;
-    transform: translate(-50%, -50%) scale(1);
-  }
-  to {
-    opacity: 0.8;
-    transform: translate(-50%, -50%) scale(1.2);
-  }
+[data-theme="dark"] .fallbackGradient {
+  background: linear-gradient(135deg, rgba(95, 93, 189, 0.2) 0%, rgba(142, 140, 242, 0.25) 50%, rgba(184, 182, 255, 0.2) 100%);
 }
 
 /* Tablet */

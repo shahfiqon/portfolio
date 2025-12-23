@@ -1,73 +1,31 @@
-/**
- * CSS files with the .module.css suffix will be treated as CSS modules
- * and scoped locally.
- */
-
-/* .heroBanner {
-  padding: 4rem 0;
-  text-align: center;
-  position: relative;
-  overflow: hidden;
-} */
-
-/* ============================================
-   DESKTOP - Grid layout with sidebar
-   ============================================ */
-/* 
 .dashboardPage {
-  display: grid;
-  grid-template-columns: 240px minmax(0, 1fr);
-  gap: 2.5rem;
-  padding: 0.2rem;
-  position: relative;
-  transition: grid-template-columns 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-} */
-
-/* When sidebar is collapsed, adjust grid columns */
-/* .dashboardPage.collapsed {
-  grid-template-columns: 80px minmax(0, 1fr);
+  min-height: calc(100vh - 60px);
+  background: var(--ifm-background-color);
 }
 
 .dashboardContent {
-  display: flex;
-  flex-direction: column;
-  gap: 3rem;
-  position: relative;
-  z-index: 1;
-  max-width: 1280px;
-  margin: 0 auto;
   width: 100%;
-} */
+  padding-bottom: 60px;
+}
 
-/* ============================================
-   MOBILE - Full width, sidebar is overlay
-   ============================================ */
+/* Smooth scroll for anchor links */
+html {
+  scroll-behavior: smooth;
+}
 
-/* @media (max-width: 996px) {
+/* Responsive spacing */
+@media (max-width: 996px) {
   .dashboardPage {
-    display: block;
-    grid-template-columns: none;
-    padding: 1rem;
-    transition: none;
-  }
-  .dashboardPage.collapsed {
-    grid-template-columns: none;
+    min-height: auto;
   }
 
   .dashboardContent {
-    width: 100%;
-    max-width: 100%;
+    padding-bottom: 40px;
   }
 }
 
-@media screen and (max-width: 996px) {
-  .heroBanner {
-    padding: 2rem;
+@media (max-width: 576px) {
+  .dashboardContent {
+    padding-bottom: 30px;
   }
 }
-
-.buttons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-} */

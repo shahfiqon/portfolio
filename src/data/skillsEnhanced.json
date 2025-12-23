@@ -1,0 +1,56 @@
+{
+  "categories": [
+    {
+      "name": "Languages",
+      "skills": [
+        { "name": "TypeScript", "proficiency": 95, "years": 5, "icon": "SiTypescript" },
+        { "name": "JavaScript", "proficiency": 98, "years": 7, "icon": "SiJavascript" },
+        { "name": "Python", "proficiency": 90, "years": 4, "icon": "SiPython" },
+        { "name": "Go", "proficiency": 75, "years": 2, "icon": "SiGo" },
+        { "name": "SQL", "proficiency": 85, "years": 6, "icon": "FaDatabase" }
+      ]
+    },
+    {
+      "name": "Frameworks",
+      "skills": [
+        { "name": "React", "proficiency": 95, "years": 5, "icon": "SiReact" },
+        { "name": "Next.js", "proficiency": 90, "years": 3, "icon": "SiNextdotjs" },
+        { "name": "Node.js", "proficiency": 88, "years": 5, "icon": "SiNodedotjs" },
+        { "name": "Express", "proficiency": 85, "years": 4, "icon": "SiExpress" },
+        { "name": "Vue.js", "proficiency": 80, "years": 3, "icon": "SiVuedotjs" },
+        { "name": "FastAPI", "proficiency": 75, "years": 2, "icon": "SiFastapi" }
+      ]
+    },
+    {
+      "name": "Databases",
+      "skills": [
+        { "name": "PostgreSQL", "proficiency": 88, "years": 5, "icon": "SiPostgresql" },
+        { "name": "MongoDB", "proficiency": 85, "years": 4, "icon": "SiMongodb" },
+        { "name": "Redis", "proficiency": 80, "years": 3, "icon": "SiRedis" },
+        { "name": "Elasticsearch", "proficiency": 70, "years": 2, "icon": "SiElasticsearch" }
+      ]
+    },
+    {
+      "name": "Infrastructure",
+      "skills": [
+        { "name": "AWS", "proficiency": 85, "years": 4, "icon": "SiAmazonwebservices" },
+        { "name": "Docker", "proficiency": 90, "years": 4, "icon": "SiDocker" },
+        { "name": "Kubernetes", "proficiency": 75, "years": 2, "icon": "SiKubernetes" },
+        { "name": "Terraform", "proficiency": 70, "years": 2, "icon": "SiTerraform" },
+        { "name": "CI/CD", "proficiency": 88, "years": 5, "icon": "DiDatabase" }
+      ]
+    },
+    {
+      "name": "Tools & Others",
+      "skills": [
+        { "name": "Git", "proficiency": 95, "years": 8, "icon": "SiGit" },
+        { "name": "Webpack", "proficiency": 85, "years": 4, "icon": "SiWebpack" },
+        { "name": "GraphQL", "proficiency": 80, "years": 3, "icon": "SiGraphql" },
+        { "name": "WebSockets", "proficiency": 75, "years": 3, "icon": "SiSocketdotio" },
+        { "name": "Testing", "proficiency": 90, "years": 6, "icon": "DiDatabase" }
+      ]
+    }
+  ]
+}
+
+

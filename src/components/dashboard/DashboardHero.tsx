@@ -1,4 +1,5 @@
 import styles from "./DashboardHero.module.css";
+import BrowserOnly from '@docusaurus/BrowserOnly';
 
 interface DashboardHeroProps {
   title: string;
@@ -33,10 +34,12 @@ export default function DashboardHero({
         </a>
       </div>
       <div className={styles.heroVisual} aria-hidden="true">
-        <span className={styles.ring1} />
-        <span className={styles.ring2} />
-        <span className={styles.ring3} />
-        <div className={styles.glowOrb} />
+        <BrowserOnly fallback={<div className={styles.fallbackGradient} />}>
+          {() => {
+            const Hero3DBackground = require('../Hero3D/Hero3DBackground').default;
+            return <Hero3DBackground />;
+          }}
+        </BrowserOnly>
       </div>
     </section>
   );

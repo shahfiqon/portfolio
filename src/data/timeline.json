@@ -1,0 +1,120 @@
+{
+  "milestones": [
+    {
+      "year": 2017,
+      "month": "Jan",
+      "event": "Started Career",
+      "type": "career",
+      "company": "Digital Ventures",
+      "role": "Junior Software Engineer",
+      "totalYears": 0,
+      "skills": ["JavaScript", "HTML", "CSS", "Vue.js"]
+    },
+    {
+      "year": 2018,
+      "month": "Jun",
+      "event": "First Major Project Launch",
+      "type": "achievement",
+      "description": "Launched mobile-first PWA serving 10k+ users",
+      "totalYears": 1.5,
+      "skills": ["Vue.js", "PWA", "Performance"]
+    },
+    {
+      "year": 2019,
+      "month": "Mar",
+      "event": "Promoted to Full Stack Developer",
+      "type": "promotion",
+      "company": "CloudBridge Systems",
+      "role": "Full Stack Developer",
+      "totalYears": 2,
+      "skills": ["Node.js", "Docker", "AWS", "Microservices"]
+    },
+    {
+      "year": 2020,
+      "month": "Jan",
+      "event": "Led Infrastructure Migration",
+      "type": "achievement",
+      "description": "Migrated monolith to microservices, reduced latency 60%",
+      "totalYears": 3,
+      "skills": ["Kubernetes", "Docker", "System Design"]
+    },
+    {
+      "year": 2020,
+      "month": "Sep",
+      "event": "Joined TechFlow Solutions",
+      "type": "career",
+      "company": "TechFlow Solutions",
+      "role": "Frontend Developer",
+      "totalYears": 3.5,
+      "skills": ["React", "TypeScript", "Next.js"]
+    },
+    {
+      "year": 2021,
+      "month": "Dec",
+      "event": "Built E-commerce Platform",
+      "type": "achievement",
+      "description": "Architected platform handling 50k daily transactions",
+      "totalYears": 4.5,
+      "skills": ["Next.js", "E-commerce", "Performance"]
+    },
+    {
+      "year": 2022,
+      "month": "Apr",
+      "event": "Promoted to Product Engineer",
+      "type": "promotion",
+      "company": "InnovateX",
+      "role": "Product Engineer",
+      "totalYears": 5,
+      "skills": ["React", "Data Visualization", "Product Design"]
+    },
+    {
+      "year": 2023,
+      "month": "Feb",
+      "event": "Launched Analytics Platform",
+      "type": "achievement",
+      "description": "Built real-time analytics serving 100k+ users",
+      "totalYears": 6,
+      "skills": ["Recharts", "Real-time", "WebSockets"]
+    },
+    {
+      "year": 2024,
+      "month": "Jan",
+      "event": "Promoted to Senior Frontend Engineer",
+      "type": "promotion",
+      "company": "xyz Corp",
+      "role": "Senior Frontend Engineer",
+      "totalYears": 7,
+      "skills": ["Leadership", "Mentoring", "Architecture"]
+    },
+    {
+      "year": 2024,
+      "month": "Aug",
+      "event": "Led Dashboard Revamp",
+      "type": "achievement",
+      "description": "Increased user engagement by 35%",
+      "totalYears": 7.5,
+      "skills": ["React", "Docusaurus", "UX Design"]
+    },
+    {
+      "year": 2025,
+      "month": "Jan",
+      "event": "Current",
+      "type": "current",
+      "totalYears": 8,
+      "skills": ["All Stack"]
+    }
+  ],
+  "experienceGrowth": [
+    { "year": 2017, "totalYears": 0, "frontend": 0, "backend": 0, "devops": 0 },
+    { "year": 2018, "totalYears": 1, "frontend": 0.8, "backend": 0.2, "devops": 0 },
+    { "year": 2019, "totalYears": 2, "frontend": 1.2, "backend": 0.6, "devops": 0.2 },
+    { "year": 2020, "totalYears": 3, "frontend": 1.8, "backend": 1, "devops": 0.5 },
+    { "year": 2021, "totalYears": 4, "frontend": 2.5, "backend": 1.3, "devops": 0.8 },
+    { "year": 2022, "totalYears": 5, "frontend": 3.5, "backend": 1.8, "devops": 1.2 },
+    { "year": 2023, "totalYears": 6, "frontend": 4.2, "backend": 2.5, "devops": 1.5 },
+    { "year": 2024, "totalYears": 7, "frontend": 4.8, "backend": 3, "devops": 1.8 },
+    { "year": 2025, "totalYears": 8, "frontend": 5, "backend": 3.5, "devops": 2 }
+  ]
+}
+
+

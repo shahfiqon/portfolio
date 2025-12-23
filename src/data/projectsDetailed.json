@@ -1,0 +1,171 @@
+{
+  "projects": [
+    {
+      "id": "analytics-dashboard",
+      "title": "Real-Time Analytics Dashboard",
+      "description": "Enterprise analytics platform serving 500k+ active users with real-time data visualization",
+      "longDescription": "Led the development of a comprehensive analytics platform that processes millions of events daily. Implemented custom chart library, real-time WebSocket updates, and advanced filtering capabilities. The platform reduced decision-making time by 60% for executive teams.",
+      "role": "Lead Frontend Engineer",
+      "contribution": "Architected frontend infrastructure, implemented 20+ custom chart components, established design system, mentored 3 junior developers",
+      "impact": {
+        "users": "500k+",
+        "performance": "40% faster load time",
+        "engagement": "+35% user engagement",
+        "metrics": "Processing 5M events/day"
+      },
+      "techStack": ["React", "TypeScript", "Recharts", "WebSockets", "Redis", "PostgreSQL"],
+      "domains": ["Frontend", "Data Visualization", "Real-time Systems"],
+      "media": {
+        "thumbnail": "/img/projects/analytics-thumb.gif",
+        "demo": "/img/projects/analytics-demo.mp4"
+      },
+      "links": {
+        "github": "https://github.com/shahfiqon/analytics-dashboard",
+        "demo": "https://analytics-demo.phoenix.dev",
+        "caseStudy": "/blog/building-analytics-platform"
+      },
+      "date": "2024-08",
+      "featured": true,
+      "status": "production"
+    },
+    {
+      "id": "ecommerce-platform",
+      "title": "E-Commerce Platform",
+      "description": "Scalable e-commerce solution handling 50k+ daily transactions",
+      "longDescription": "Built a high-performance e-commerce platform from scratch using Next.js and microservices architecture. Implemented advanced caching strategies, optimistic UI updates, and seamless payment integration with multiple providers.",
+      "role": "Frontend Architect",
+      "contribution": "Designed system architecture, implemented checkout flow, integrated payment gateways, optimized for Core Web Vitals",
+      "impact": {
+        "transactions": "50k+ daily",
+        "performance": "95+ Lighthouse score",
+        "conversion": "+28% conversion rate",
+        "revenue": "$2M+ monthly GMV"
+      },
+      "techStack": ["Next.js", "TypeScript", "Stripe", "Tailwind CSS", "PostgreSQL", "Redis"],
+      "domains": ["Frontend", "E-commerce", "Performance"],
+      "media": {
+        "thumbnail": "/img/projects/ecommerce-thumb.gif",
+        "demo": "/img/projects/ecommerce-demo.mp4"
+      },
+      "links": {
+        "github": "https://github.com/shahfiqon/ecommerce-platform",
+        "demo": "https://shop.phoenix.dev",
+        "caseStudy": "/blog/ecommerce-architecture"
+      },
+      "date": "2021-12",
+      "featured": true,
+      "status": "production"
+    },
+    {
+      "id": "design-system",
+      "title": "Component Design System",
+      "description": "Comprehensive design system powering 4 production applications",
+      "longDescription": "Created a scalable design system with 50+ reusable components, comprehensive documentation, and automated visual regression testing. Reduced development time by 40% across teams.",
+      "role": "Design System Lead",
+      "contribution": "Architected component library, established design tokens, created documentation site, implemented Storybook",
+      "impact": {
+        "components": "50+ components",
+        "adoption": "4 products using it",
+        "efficiency": "40% faster development",
+        "consistency": "100% design compliance"
+      },
+      "techStack": ["React", "TypeScript", "Styled Components", "Storybook", "Chromatic"],
+      "domains": ["Frontend", "Design Systems", "Developer Tools"],
+      "media": {
+        "thumbnail": "/img/projects/design-system-thumb.gif",
+        "demo": "/img/projects/design-system-demo.mp4"
+      },
+      "links": {
+        "github": "https://github.com/shahfiqon/design-system",
+        "demo": "https://design.phoenix.dev",
+        "caseStudy": "/blog/building-design-system"
+      },
+      "date": "2023-06",
+      "featured": true,
+      "status": "production"
+    },
+    {
+      "id": "microservices-migration",
+      "title": "Microservices Migration",
+      "description": "Migrated monolithic application to microservices, reducing API latency by 60%",
+      "longDescription": "Led the architectural transformation from a monolithic Node.js application to a distributed microservices architecture. Implemented service mesh, API gateway, and comprehensive monitoring.",
+      "role": "Backend Engineer",
+      "contribution": "Designed microservices architecture, implemented API gateway, set up Kubernetes cluster, established monitoring",
+      "impact": {
+        "latency": "60% reduction",
+        "scalability": "10x capacity increase",
+        "deployment": "5x faster deployments",
+        "uptime": "99.9% SLA achieved"
+      },
+      "techStack": ["Node.js", "Docker", "Kubernetes", "AWS", "Terraform", "Prometheus"],
+      "domains": ["Backend", "System Design", "DevOps"],
+      "media": {
+        "thumbnail": "/img/projects/microservices-thumb.gif",
+        "demo": "/img/projects/microservices-demo.mp4"
+      },
+      "links": {
+        "github": "https://github.com/shahfiqon/microservices-migration",
+        "caseStudy": "/blog/microservices-journey"
+      },
+      "date": "2020-01",
+      "featured": false,
+      "status": "production"
+    },
+    {
+      "id": "ml-recommendation-engine",
+      "title": "ML Recommendation Engine",
+      "description": "Personalized recommendation system increasing user engagement by 45%",
+      "longDescription": "Built a machine learning-powered recommendation engine using collaborative filtering and content-based algorithms. Integrated with existing platform to provide real-time personalized suggestions.",
+      "role": "ML Engineer",
+      "contribution": "Implemented recommendation algorithms, built data pipeline, created A/B testing framework, deployed ML models",
+      "impact": {
+        "engagement": "+45% engagement",
+        "retention": "+32% retention",
+        "accuracy": "85% recommendation accuracy",
+        "performance": "<50ms response time"
+      },
+      "techStack": ["Python", "TensorFlow", "FastAPI", "Redis", "PostgreSQL", "Docker"],
+      "domains": ["Machine Learning", "Backend", "Data Engineering"],
+      "media": {
+        "thumbnail": "/img/projects/ml-engine-thumb.gif",
+        "demo": "/img/projects/ml-engine-demo.mp4"
+      },
+      "links": {
+        "github": "https://github.com/shahfiqon/ml-recommendation",
+        "caseStudy": "/blog/ml-recommendations"
+      },
+      "date": "2023-03",
+      "featured": false,
+      "status": "production"
+    },
+    {
+      "id": "devops-automation",
+      "title": "DevOps Automation Suite",
+      "description": "CI/CD pipeline automation reducing deployment time from hours to minutes",
+      "longDescription": "Developed comprehensive DevOps automation tools including infrastructure as code, automated testing pipelines, and deployment orchestration. Enabled team to deploy 10x more frequently with higher confidence.",
+      "role": "DevOps Engineer",
+      "contribution": "Built CI/CD pipelines, implemented infrastructure as code, created monitoring dashboards, automated security scanning",
+      "impact": {
+        "deployment": "95% faster deployments",
+        "frequency": "10x deployment frequency",
+        "reliability": "Zero downtime deployments",
+        "security": "100% automated security scans"
+      },
+      "techStack": ["GitHub Actions", "Terraform", "Docker", "Kubernetes", "Prometheus", "Grafana"],
+      "domains": ["DevOps", "Infrastructure", "Automation"],
+      "media": {
+        "thumbnail": "/img/projects/devops-thumb.gif",
+        "demo": "/img/projects/devops-demo.mp4"
+      },
+      "links": {
+        "github": "https://github.com/shahfiqon/devops-automation",
+        "caseStudy": "/blog/devops-automation"
+      },
+      "date": "2022-09",
+      "featured": false,
+      "status": "production"
+    }
+  ]
+}
+
+

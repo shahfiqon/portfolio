@@ -1,0 +1,46 @@
+{
+  "domains": [
+    {
+      "name": "Frontend Engineering",
+      "years": 5,
+      "percentage": 35,
+      "skills": ["React", "TypeScript", "Next.js", "Vue.js"],
+      "tools": ["Webpack", "Vite", "Tailwind CSS", "Styled Components"],
+      "color": "#3b82f6"
+    },
+    {
+      "name": "Backend Engineering",
+      "years": 3.5,
+      "percentage": 25,
+      "skills": ["Node.js", "Python", "Go", "REST APIs"],
+      "tools": ["Express", "FastAPI", "PostgreSQL", "Redis"],
+      "color": "#10b981"
+    },
+    {
+      "name": "System Design",
+      "years": 2.5,
+      "percentage": 18,
+      "skills": ["Microservices", "Architecture", "Scalability", "Performance"],
+      "tools": ["Kubernetes", "Docker", "AWS", "Terraform"],
+      "color": "#f59e0b"
+    },
+    {
+      "name": "AI / ML",
+      "years": 1.5,
+      "percentage": 10,
+      "skills": ["Machine Learning", "Data Analysis", "NLP"],
+      "tools": ["TensorFlow", "PyTorch", "Pandas", "Scikit-learn"],
+      "color": "#8b5cf6"
+    },
+    {
+      "name": "Cloud / DevOps",
+      "years": 2,
+      "percentage": 12,
+      "skills": ["CI/CD", "Infrastructure", "Monitoring", "Security"],
+      "tools": ["GitHub Actions", "Jenkins", "Prometheus", "Grafana"],
+      "color": "#ec4899"
+    }
+  ]
+}
+
+

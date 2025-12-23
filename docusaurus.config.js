@@ -10,8 +10,8 @@ import { themes as prismThemes } from "prism-react-renderer";
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "phoenix",
-  tagline: "Dinosaurs are cool",
+  title: "Phoenix | Senior Software Engineer",
+  tagline: "Building scalable systems and exceptional user experiences",
   favicon: "img/favicon.ico",
 
   deploymentBranch: "gh-pages",
@@ -43,23 +43,18 @@ const config = {
       "classic",
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
-        docs: {
-          sidebarPath: "./sidebars.js",
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
-        },
+        docs: false, // Disable docs plugin
         blog: {
           showReadingTime: true,
           feedOptions: {
             type: ["rss", "atom"],
             xslt: true,
           },
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
+          blogTitle: "Technical Blog",
+          blogDescription: "Insights on software engineering, architecture, and technology",
+          postsPerPage: 10,
+          blogSidebarTitle: "Recent posts",
+          blogSidebarCount: 5,
           // Useful options to enforce blogging best practices
           onInlineTags: "warn",
           onInlineAuthors: "warn",
@@ -77,7 +72,24 @@ const config = {
     ({
       // Replace with your project's social card
       image: "img/docusaurus-social-card.jpg",
+      metadata: [
+        {
+          name: "description",
+          content:
+            "Senior Software Engineer portfolio showcasing experience in frontend, backend, and system design",
+        },
+        { name: "keywords", content: "software engineer, portfolio, react, typescript, frontend, backend" },
+        { property: "og:type", content: "website" },
+        { property: "og:title", content: "Phoenix | Senior Software Engineer Portfolio" },
+        {
+          property: "og:description",
+          content: "Building scalable systems and exceptional user experiences",
+        },
+        { name: "twitter:card", content: "summary_large_image" },
+      ],
       colorMode: {
+        defaultMode: "light",
+        disableSwitch: false,
         respectPrefersColorScheme: true,
       },
       navbar: {
@@ -88,79 +100,95 @@ const config = {
         },
         items: [
           {
-            label: "HOME",
+            label: "Home",
             to: "/",
-            exact: true,
+            position: "right",
+            activeBaseRegex: "^/$",
+          },
+          {
+            label: "About",
+            to: "/about",
             position: "right",
           },
           {
-            label: "TECH",
-            to: "/tech",
+            label: "Experience",
+            to: "/experience",
             position: "right",
           },
           {
-            label: "BLOG",
+            label: "Projects",
+            to: "/projects",
+            position: "right",
+          },
+          {
+            label: "Achievements",
             to: "/blog",
             position: "right",
           },
-
           {
-            label: "CONTACT",
-            to: "/contact",
+            type: "html",
             position: "right",
-          },
-          {
-            label: "GITHUB",
-            href: "https://github.com/shahfiqon",
-            position: "right",
+            value: '<a href="/contact" class="resume-button">Resume</a>',
           },
         ],
       },
-      // footer: {
-      //   style: 'dark',
-      //   links: [
-      //     {
-      //       title: 'Docs',
-      //       items: [
-      //         {
-      //           label: 'Tutorial',
-      //           to: '/docs/intro',
-      //         },
-      //       ],
-      //     },
-      //     {
-      //       title: 'Community',
-      //       items: [
-      //         {
-      //           label: 'Stack Overflow',
-      //           href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-      //         },
-      //         {
-      //           label: 'Discord',
-      //           href: 'https://discordapp.com/invite/docusaurus',
-      //         },
-      //         {
-      //           label: 'X',
-      //           href: 'https://x.com/docusaurus',
-      //         },
-      //       ],
-      //     },
-      //     {
-      //       title: 'More',
-      //       items: [
-      //         {
-      //           label: 'Blog',
-      //           to: '/blog',
-      //         },
-      //         {
-      //           label: 'GitHub',
-      //           href: 'https://github.com/facebook/docusaurus',
-      //         },
-      //       ],
-      //     },
-      //   ],
-      //   copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
-      // },
+      footer: {
+        style: "dark",
+        links: [
+          {
+            title: "Navigate",
+            items: [
+              {
+                label: "Home",
+                to: "/",
+              },
+              {
+                label: "Projects",
+                to: "/projects",
+              },
+              {
+                label: "Blog",
+                to: "/blog",
+              },
+              {
+                label: "Contact",
+                to: "/contact",
+              },
+            ],
+          },
+          {
+            title: "Connect",
+            items: [
+              {
+                label: "GitHub",
+                href: "https://github.com/shahfiqon",
+              },
+              {
+                label: "LinkedIn",
+                href: "https://linkedin.com/in/phoenix",
+              },
+              {
+                label: "Twitter",
+                href: "https://twitter.com/phoenix",
+              },
+            ],
+          },
+          {
+            title: "Resources",
+            items: [
+              {
+                label: "GitHub",
+                href: "https://github.com/shahfiqon",
+              },
+              {
+                label: "Stack Overflow",
+                href: "https://stackoverflow.com",
+              },
+            ],
+          },
+        ],
+        copyright: `Copyright © ${new Date().getFullYear()} Phoenix. Built with Docusaurus.`,
+      },
       prism: {
         theme: prismThemes.github,
         darkTheme: prismThemes.dracula,

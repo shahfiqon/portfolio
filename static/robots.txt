@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://shahfiqon.github.io/sitemap.xml
+
+
