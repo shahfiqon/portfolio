@@ -1,7 +1,7 @@
 {
   "hero": {
     "title": "Experience",
-    "subtitle": "My professional journey in software engineering"
+    "subtitle": "My professional journey in full-stack development and AI/ML engineering"
   },
   "cta": {
     "title": "Interested in Working Together?",
@@ -11,36 +11,55 @@
   },
   "experiences": [
     {
-      "role": "Senior Software Engineer",
-      "company": "Tech Company",
-      "period": "2021 - Present",
-      "description": "Leading frontend architecture and development of large-scale web applications. Mentoring junior developers and establishing best practices.",
+      "role": "Decentralized AI Miner | ML Engineer",
+      "company": "Bittensor Network",
+      "period": "2025 - Present",
+      "description": "Working on decentralized AI mining and ML engineering, deploying and optimizing LLM models across multiple subnets, implementing distributed training pipelines, and building monitoring and security infrastructure.",
       "achievements": [
-        "Improved application performance by 40% through optimization",
-        "Led migration to TypeScript and modern React patterns",
-        "Established CI/CD pipeline reducing deployment time by 60%"
+        "Deployed fine-tuned Llama-3-8B model on Subnet 1 using vLLM inference server on NVIDIA A100, achieving 0.43s latency and ranking top-12% among 342 miners",
+        "Implemented gradient synchronization pipeline for distributed training using PyTorch DDP, reducing communication overhead by 31%",
+        "Built automated subnet registration system reducing registration expenses by 67% across 6 subnet deployments",
+        "Engineered LoRA fine-tuning pipeline with Hugging Face PEFT achieving 91.3% task accuracy improvement",
+        "Designed real-time monitoring dashboard using Prometheus, Grafana, and FastAPI with 99.4% uptime"
       ]
     },
     {
-      "role": "Software Engineer",
-      "company": "Startup Inc.",
-      "period": "2019 - 2021",
-      "description": "Full-stack development of customer-facing web applications using React, Node.js, and PostgreSQL.",
+      "role": "Senior Full-Stack Engineer",
+      "company": "BuiltMighty",
+      "period": "2021 - 2024",
+      "description": "Architected and led development of full-stack location intelligence platform from scratch, establishing technical direction and leading 2 engineers. Built RAG-powered business intelligence features, geospatial analytics dashboards, AI-powered vector search, and comprehensive MLOps platform with Gen AI capabilities.",
       "achievements": [
-        "Built scalable REST APIs serving 100k+ daily active users",
-        "Implemented real-time features using WebSockets",
-        "Reduced backend response time by 50%"
+        "Architected full-stack location intelligence platform with React TypeScript, FastAPI, and PostgreSQL/PostGIS, reducing site selection time by 70%",
+        "Led delivery of RAG-powered business intelligence feature using Pinecone, OpenAI GPT-4, and Claude 3, processing 10K+ queries daily with 92% satisfaction",
+        "Built geospatial analytics dashboard with Mapbox GL JS and Chart.js, reducing query latency by 60% with Redis caching",
+        "Developed AI-powered vector search feature with Pinecone and OpenAI embeddings, enabling semantic search with <100ms response time",
+        "Architected zero-downtime deployment infrastructure with GitHub Actions, achieving 99.9% uptime and 75% reduction in deployment time"
       ]
     },
     {
-      "role": "Junior Developer",
-      "company": "Digital Agency",
-      "period": "2018 - 2019",
-      "description": "Frontend development and UI/UX implementation for client projects.",
+      "role": "Full-Stack Engineer",
+      "company": "FlintAI",
+      "period": "2020 - 2021",
+      "description": "Architected and developed full-stack authorship determination platform from scratch, building document analysis systems, AI content detection APIs, plagiarism detection engines, and multi-tenant SaaS platform architecture for academic integrity.",
       "achievements": [
-        "Developed responsive websites for 15+ clients",
-        "Improved code quality through implementing testing practices",
-        "Collaborated with design team to create pixel-perfect implementations"
+        "Architected authorship determination platform with React, FastAPI, and AWS SageMaker, processing 500,000+ document analyses daily with 94% accuracy",
+        "Developed real-time AI content detection API service with sub-200ms latency, handling 100,000+ detection requests daily",
+        "Created plagiarism detection engine with AWS Elasticsearch, detecting 40,000+ instances monthly",
+        "Implemented multi-tenant SaaS platform with AWS ECS, ensuring FERPA/GDPR compliance for CollegeBoard implementation",
+        "Built document processing pipeline handling 10TB+ of text data monthly with zero-downtime deployments"
+      ]
+    },
+    {
+      "role": "Full-Stack Engineer",
+      "company": "LevelAccess",
+      "period": "2015 - 2020",
+      "description": "Refactored and enhanced core accessibility testing engine, developed comprehensive Angular design system library, built automated accessibility testing pipelines, and created multi-tenant accessibility monitoring platform for digital accessibility compliance.",
+      "achievements": [
+        "Refactored accessibility testing engine using Python, Flask, and SQLAlchemy, improving scan accuracy by 40% and reducing false positives by 35%",
+        "Developed comprehensive Angular design system library with full WCAG 2.1/2.2 compliance, improving accessibility score from 80% to 95%",
+        "Built automated accessibility testing pipeline integrating with CI/CD, reducing remediation costs by 50% for clients",
+        "Created accessibility testing API with Python, FastAPI, and AWS Lambda, expanding platform reach to 200+ partner organizations",
+        "Built multi-tenant monitoring platform processing 10,000+ scans daily with 99.9% uptime"
       ]
     }
   ]

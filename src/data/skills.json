@@ -1,7 +1,16 @@
 [
-  { "skill": "Python", "value": 90 },
-  { "skill": "SQL", "value": 85 },
-  { "skill": "Power BI", "value": 75 },
-  { "skill": "Tableau", "value": 60 },
-  { "skill": "JavaScript", "value": 70 }
+  { "skill": "Python", "value": 95 },
+  { "skill": "TypeScript", "value": 95 },
+  { "skill": "React", "value": 95 },
+  { "skill": "FastAPI", "value": 95 },
+  { "skill": "PostgreSQL", "value": 95 },
+  { "skill": "Flask", "value": 90 },
+  { "skill": "SQL", "value": 90 },
+  { "skill": "AWS", "value": 92 },
+  { "skill": "Docker", "value": 95 },
+  { "skill": "LangChain", "value": 92 },
+  { "skill": "OpenAI GPT-4", "value": 92 },
+  { "skill": "Redis", "value": 90 },
+  { "skill": "Kubernetes", "value": 88 },
+  { "skill": "Pinecone", "value": 88 }
 ]

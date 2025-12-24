@@ -176,7 +176,7 @@ const ExperienceDomainChart: React.FC = () => {
             textAlign: "center",
           }}
         >
-          Total: <strong>8+ years</strong> of professional experience across
+          Total: <strong>10+ years</strong> of professional experience across
           multiple domains
         </p>
       </div>

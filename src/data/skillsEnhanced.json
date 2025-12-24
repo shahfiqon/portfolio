@@ -1,53 +1,100 @@
 {
   "categories": [
     {
-      "name": "Languages",
+      "name": "Programming Languages",
       "skills": [
-        { "name": "TypeScript", "proficiency": 95, "years": 5, "icon": "SiTypescript" },
-        { "name": "JavaScript", "proficiency": 98, "years": 7, "icon": "SiJavascript" },
-        { "name": "Python", "proficiency": 90, "years": 4, "icon": "SiPython" },
-        { "name": "Go", "proficiency": 75, "years": 2, "icon": "SiGo" },
-        { "name": "SQL", "proficiency": 85, "years": 6, "icon": "FaDatabase" }
+        { "name": "Python", "proficiency": 95, "years": 9, "icon": "SiPython" },
+        { "name": "TypeScript", "proficiency": 95, "years": 9, "icon": "SiTypescript" },
+        { "name": "JavaScript", "proficiency": 95, "years": 9, "icon": "SiJavascript" },
+        { "name": "SQL", "proficiency": 90, "years": 9, "icon": "FaDatabase" },
+        { "name": "PySpark", "proficiency": 85, "years": 4, "icon": "SiApachespark" }
       ]
     },
     {
-      "name": "Frameworks",
+      "name": "Frontend Development",
       "skills": [
-        { "name": "React", "proficiency": 95, "years": 5, "icon": "SiReact" },
-        { "name": "Next.js", "proficiency": 90, "years": 3, "icon": "SiNextdotjs" },
-        { "name": "Node.js", "proficiency": 88, "years": 5, "icon": "SiNodedotjs" },
-        { "name": "Express", "proficiency": 85, "years": 4, "icon": "SiExpress" },
-        { "name": "Vue.js", "proficiency": 80, "years": 3, "icon": "SiVuedotjs" },
-        { "name": "FastAPI", "proficiency": 75, "years": 2, "icon": "SiFastapi" }
+        { "name": "React", "proficiency": 95, "years": 9, "icon": "SiReact" },
+        { "name": "Material-UI", "proficiency": 90, "years": 5, "icon": "SiMui" },
+        { "name": "Angular", "proficiency": 88, "years": 5, "icon": "SiAngular" },
+        { "name": "Chart.js", "proficiency": 85, "years": 4, "icon": "SiChartdotjs" },
+        { "name": "Mapbox GL JS", "proficiency": 85, "years": 4, "icon": "SiMapbox" },
+        { "name": "React Router", "proficiency": 90, "years": 6, "icon": "SiReactrouter" },
+        { "name": "React Query", "proficiency": 88, "years": 4, "icon": "SiReactquery" },
+        { "name": "Vue.js", "proficiency": 80, "years": 3, "icon": "SiVuedotjs" }
+      ]
+    },
+    {
+      "name": "Backend Development",
+      "skills": [
+        { "name": "FastAPI", "proficiency": 95, "years": 6, "icon": "SiFastapi" },
+        { "name": "Flask", "proficiency": 90, "years": 7, "icon": "SiFlask" },
+        { "name": "REST APIs", "proficiency": 95, "years": 9, "icon": "SiPostman" },
+        { "name": "GraphQL", "proficiency": 85, "years": 4, "icon": "SiGraphql" },
+        { "name": "WebSocket", "proficiency": 88, "years": 5, "icon": "SiSocketdotio" },
+        { "name": "SQLAlchemy", "proficiency": 90, "years": 7, "icon": "SiPython" },
+        { "name": "Pydantic", "proficiency": 92, "years": 5, "icon": "SiPydantic" }
+      ]
+    },
+    {
+      "name": "AI/ML",
+      "skills": [
+        { "name": "OpenAI GPT-4", "proficiency": 92, "years": 3, "icon": "SiOpenai" },
+        { "name": "Claude 3", "proficiency": 90, "years": 2, "icon": "SiAnthropic" },
+        { "name": "LangChain", "proficiency": 92, "years": 3, "icon": "SiLangchain" },
+        { "name": "LangGraph", "proficiency": 88, "years": 2, "icon": "SiLangchain" },
+        { "name": "Hugging Face", "proficiency": 88, "years": 3, "icon": "SiHuggingface" },
+        { "name": "PyTorch", "proficiency": 85, "years": 3, "icon": "SiPytorch" },
+        { "name": "vLLM", "proficiency": 85, "years": 1, "icon": "SiPython" },
+        { "name": "TensorFlow", "proficiency": 80, "years": 4, "icon": "SiTensorflow" },
+        { "name": "AWS SageMaker", "proficiency": 85, "years": 4, "icon": "SiAmazonaws" }
       ]
     },
     {
       "name": "Databases",
       "skills": [
-        { "name": "PostgreSQL", "proficiency": 88, "years": 5, "icon": "SiPostgresql" },
-        { "name": "MongoDB", "proficiency": 85, "years": 4, "icon": "SiMongodb" },
-        { "name": "Redis", "proficiency": 80, "years": 3, "icon": "SiRedis" },
-        { "name": "Elasticsearch", "proficiency": 70, "years": 2, "icon": "SiElasticsearch" }
+        { "name": "PostgreSQL", "proficiency": 95, "years": 9, "icon": "SiPostgresql" },
+        { "name": "PostGIS", "proficiency": 88, "years": 4, "icon": "SiPostgis" },
+        { "name": "Redis", "proficiency": 90, "years": 6, "icon": "SiRedis" },
+        { "name": "Pinecone", "proficiency": 88, "years": 3, "icon": "SiPinecone" },
+        { "name": "Elasticsearch", "proficiency": 85, "years": 4, "icon": "SiElasticsearch" },
+        { "name": "MySQL", "proficiency": 85, "years": 6, "icon": "SiMysql" },
+        { "name": "MongoDB", "proficiency": 80, "years": 4, "icon": "SiMongodb" },
+        { "name": "Delta Lake", "proficiency": 82, "years": 3, "icon": "SiDatabricks" }
       ]
     },
     {
-      "name": "Infrastructure",
+      "name": "Cloud Platforms",
       "skills": [
-        { "name": "AWS", "proficiency": 85, "years": 4, "icon": "SiAmazonwebservices" },
-        { "name": "Docker", "proficiency": 90, "years": 4, "icon": "SiDocker" },
-        { "name": "Kubernetes", "proficiency": 75, "years": 2, "icon": "SiKubernetes" },
-        { "name": "Terraform", "proficiency": 70, "years": 2, "icon": "SiTerraform" },
-        { "name": "CI/CD", "proficiency": 88, "years": 5, "icon": "DiDatabase" }
+        { "name": "AWS", "proficiency": 92, "years": 7, "icon": "SiAmazonaws" },
+        { "name": "EC2", "proficiency": 90, "years": 7, "icon": "SiAmazonec2" },
+        { "name": "S3", "proficiency": 92, "years": 7, "icon": "SiAmazons3" },
+        { "name": "Lambda", "proficiency": 88, "years": 6, "icon": "SiAwslambda" },
+        { "name": "ECS", "proficiency": 85, "years": 5, "icon": "SiAmazonecs" },
+        { "name": "EKS", "proficiency": 82, "years": 4, "icon": "SiAmazoneks" },
+        { "name": "RDS", "proficiency": 90, "years": 6, "icon": "SiAmazonrds" },
+        { "name": "GCP", "proficiency": 80, "years": 3, "icon": "SiGooglecloud" }
       ]
     },
     {
-      "name": "Tools & Others",
+      "name": "DevOps & Infrastructure",
       "skills": [
-        { "name": "Git", "proficiency": 95, "years": 8, "icon": "SiGit" },
-        { "name": "Webpack", "proficiency": 85, "years": 4, "icon": "SiWebpack" },
-        { "name": "GraphQL", "proficiency": 80, "years": 3, "icon": "SiGraphql" },
-        { "name": "WebSockets", "proficiency": 75, "years": 3, "icon": "SiSocketdotio" },
-        { "name": "Testing", "proficiency": 90, "years": 6, "icon": "DiDatabase" }
+        { "name": "Docker", "proficiency": 95, "years": 7, "icon": "SiDocker" },
+        { "name": "Kubernetes", "proficiency": 88, "years": 5, "icon": "SiKubernetes" },
+        { "name": "GitHub Actions", "proficiency": 92, "years": 5, "icon": "SiGithubactions" },
+        { "name": "CI/CD", "proficiency": 95, "years": 7, "icon": "SiGitlab" },
+        { "name": "Prometheus", "proficiency": 88, "years": 4, "icon": "SiPrometheus" },
+        { "name": "Grafana", "proficiency": 88, "years": 4, "icon": "SiGrafana" },
+        { "name": "Terraform", "proficiency": 82, "years": 3, "icon": "SiTerraform" }
+      ]
+    },
+    {
+      "name": "Testing & Quality",
+      "skills": [
+        { "name": "Jest", "proficiency": 90, "years": 6, "icon": "SiJest" },
+        { "name": "React Testing Library", "proficiency": 88, "years": 5, "icon": "SiTestinglibrary" },
+        { "name": "pytest", "proficiency": 92, "years": 7, "icon": "SiPytest" },
+        { "name": "Cypress", "proficiency": 85, "years": 4, "icon": "SiCypress" },
+        { "name": "Selenium", "proficiency": 85, "years": 5, "icon": "SiSelenium" }
       ]
     }
   ]

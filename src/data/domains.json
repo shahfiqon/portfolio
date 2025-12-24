@@ -3,16 +3,16 @@
     {
       "name": "Frontend Engineering",
       "years": 5,
-      "percentage": 35,
+      "percentage": 15,
       "skills": ["React", "TypeScript", "Next.js", "Vue.js"],
       "tools": ["Webpack", "Vite", "Tailwind CSS", "Styled Components"],
       "color": "#3b82f6"
     },
     {
-      "name": "Backend Engineering",
-      "years": 3.5,
-      "percentage": 25,
-      "skills": ["Node.js", "Python", "Go", "REST APIs"],
+      "name": "Backend",
+      "years": 9,
+      "percentage": 45,
+      "skills": ["Node.js", "Python", "Rust", "REST APIs"],
       "tools": ["Express", "FastAPI", "PostgreSQL", "Redis"],
       "color": "#10b981"
     },
@@ -26,7 +26,7 @@
     },
     {
       "name": "AI / ML",
-      "years": 1.5,
+      "years": 2,
       "percentage": 10,
       "skills": ["Machine Learning", "Data Analysis", "NLP"],
       "tools": ["TensorFlow", "PyTorch", "Pandas", "Scikit-learn"],

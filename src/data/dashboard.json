@@ -8,55 +8,48 @@
   ],
   "hero": {
     "title": "Hi, I'm Jane Zhang",
-    "subtitle": "Senior Software Engineer specializing in building scalable systems and exceptional user experiences. 8+ years crafting impactful solutions across the full stack.",
+    "subtitle": "Senior Full-Stack Engineer with 9+ years specializing in full-stack development, AI/ML integration, and scalable platform architecture. Expert in React, TypeScript, FastAPI, PostgreSQL, and cloud infrastructure.",
     "ctaText": "View Projects",
     "ctaLink": "/projects"
   },
   "kpis": [
-    { "label": "Years Experience", "value": "8+" },
-    { "label": "Projects Delivered", "value": "24" },
-    { "label": "Talks Given", "value": "12" },
-    { "label": "Team Members Mentored", "value": "15" },
-    { "label": "Open Source Contributions", "value": "180+" },
-    { "label": "Tech Stack Migrations", "value": "5" },
-    { "label": "Code Reviews", "value": "1.2k+" },
-    { "label": "Active Users Impacted", "value": "500k+" }
+    { "label": "Years Experience", "value": "9+" },
+    { "label": "Companies", "value": "4" },
+    { "label": "AI/ML Experience", "value": "5+ yrs" },
+    { "label": "Team Members Led", "value": "2+" },
+    { "label": "Cloud Experience", "value": "7+ yrs" },
+    { "label": "Active Users Impacted", "value": "500k+" },
+    { "label": "Daily Queries Processed", "value": "10k+" },
+    { "label": "System Uptime", "value": "99%" }
   ],
   "experience": [
     {
       "date": "2025",
-      "role": "Senior Frontend Engineer",
-      "company": "xyz Corp",
-      "summary": "Led dashboard revamp, grew engagement 35%.",
-      "tags": ["React", "Docusaurus", "Leadership"]
+      "role": "Decentralized AI Miner | ML Engineer",
+      "company": "Bittensor Network",
+      "summary": "Deployed fine-tuned LLMs, implemented distributed training pipelines, built monitoring dashboards.",
+      "tags": ["LLM", "PyTorch", "vLLM", "Grafana"]
     },
     {
-      "date": "2022",
-      "role": "Product Engineer",
-      "company": "InnovateX",
-      "summary": "Built analytics tooling, shipped custom chart kit.",
-      "tags": ["Charts", "DataViz"]
+      "date": "2021",
+      "role": "Senior Full-Stack Engineer",
+      "company": "BuiltMighty",
+      "summary": "Architected location intelligence platform, built RAG-powered BI features, led 2 engineers.",
+      "tags": ["React", "FastAPI", "LangChain", "AWS"]
     },
     {
       "date": "2020",
-      "role": "Frontend Developer",
-      "company": "TechFlow Solutions",
-      "summary": "Architected e-commerce platform handling 50k daily transactions.",
-      "tags": ["TypeScript", "Next.js", "E-commerce"]
-    },
-    {
-      "date": "2019",
-      "role": "Full Stack Developer",
-      "company": "CloudBridge Systems",
-      "summary": "Developed microservices infrastructure, reduced API latency by 60%.",
-      "tags": ["Node.js", "Docker", "AWS"]
+      "role": "Full-Stack Engineer",
+      "company": "FlintAI",
+      "summary": "Built authorship determination platform, AI content detection APIs, plagiarism detection engine.",
+      "tags": ["React", "FastAPI", "SageMaker", "ML"]
     },
     {
       "date": "2015",
-      "role": "Junior Software Engineer",
-      "company": "Digital Ventures",
-      "summary": "Contributed to mobile-first web apps, improved lighthouse scores to 95+.",
-      "tags": ["Vue.js", "Performance", "PWA"]
+      "role": "Full-Stack Engineer",
+      "company": "LevelAccess",
+      "summary": "Built accessibility testing engine, Angular design system, automated testing pipelines.",
+      "tags": ["Python", "Flask", "Angular", "WCAG"]
     }
   ],
 
@@ -70,11 +63,14 @@
   ],
   "charts": {
     "skills": [
-      { "name": "Python", "value": 90 },
-      { "name": "SQL", "value": 85 },
-      { "name": "Power BI", "value": 75 },
-      { "name": "Tableau", "value": 60 },
-      { "name": "JavaScript", "value": 70 }
+      { "name": "Python", "value": 95 },
+      { "name": "TypeScript", "value": 95 },
+      { "name": "React", "value": 95 },
+      { "name": "FastAPI", "value": 95 },
+      { "name": "PostgreSQL", "value": 95 },
+      { "name": "AWS", "value": 92 },
+      { "name": "LangChain", "value": 92 },
+      { "name": "Docker", "value": 95 }
     ],
     "velocity": [
       { "month": "Jan", "stories": 8 },

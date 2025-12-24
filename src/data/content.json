@@ -2,31 +2,31 @@
   "about": {
     "hero": {
       "title": "About Me",
-      "subtitle": "Passionate about building scalable systems and exceptional user experiences"
+      "subtitle": "Senior Full-Stack Engineer specializing in AI/ML integration and scalable platform architecture"
     },
     "bio": {
       "paragraphs": [
-        "With over 5+ years of experience in software engineering, I specialize in building scalable web applications and systems architecture. My expertise spans across frontend technologies like React, TypeScript, and modern frameworks, as well as backend development with Node.js, Python, and cloud infrastructure.",
-        "I'm passionate about creating intuitive user interfaces, optimizing performance, and implementing best practices in software development. I believe in writing clean, maintainable code and fostering collaborative team environments.",
-        "When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, or sharing knowledge through technical writing and mentoring."
+        "With 9+ years of experience in full-stack development, I specialize in building end-to-end platforms from scratch, leading technical architecture decisions, and integrating Gen AI capabilities into production systems. My expertise spans React, TypeScript, FastAPI, PostgreSQL, and cloud infrastructure, with a strong focus on AI/ML integration and scalable platform architecture.",
+        "I bring 5+ years of hands-on experience in AI/ML Integration, Gen AI, LLM Orchestration, and Vector Databases, having built RAG-powered business intelligence features, deployed fine-tuned LLMs, and implemented distributed training pipelines. My work includes architecting MLOps platforms, AI-powered vector search systems, and real-time document analysis engines with 94%+ accuracy.",
+        "With 4+ years in Cloud Infrastructure and DevOps, I've established zero-downtime deployment pipelines, comprehensive observability infrastructure, and zero-trust security platforms. I'm passionate about leading technical initiatives, mentoring engineers, and shipping impactful features that process millions of requests daily while maintaining 99.9%+ uptime."
       ]
     },
     "whatIDo": [
       {
-        "title": "Frontend Development",
-        "description": "Building responsive, performant web applications with React, TypeScript, and modern CSS"
+        "title": "Full-Stack Development",
+        "description": "Building end-to-end platforms with React, TypeScript, FastAPI, and PostgreSQL with focus on scalable architecture"
       },
       {
-        "title": "Backend Development",
-        "description": "Designing and implementing scalable APIs, microservices, and server-side logic"
+        "title": "AI/ML Integration",
+        "description": "Integrating Gen AI capabilities, LLM orchestration, RAG systems, and vector databases into production applications"
       },
       {
-        "title": "System Design",
-        "description": "Architecting robust, scalable systems with focus on performance and reliability"
+        "title": "Platform Architecture",
+        "description": "Architecting scalable platforms, establishing API standards, and leading technical direction for engineering teams"
       },
       {
-        "title": "DevOps & Cloud",
-        "description": "Managing CI/CD pipelines, containerization, and cloud infrastructure deployment"
+        "title": "Cloud & DevOps",
+        "description": "Building cloud infrastructure on AWS/GCP, implementing CI/CD pipelines, and establishing monitoring and security practices"
       }
     ]
   },
@@ -38,7 +38,7 @@
     },
     "location": {
       "title": "Location",
-      "text": "Based in [Your City], open to remote opportunities worldwide."
+      "text": "Based in Bitola, North Macedonia, open to remote opportunities worldwide."
     },
     "schedule": {
       "title": "Schedule a Call",
@@ -47,8 +47,8 @@
   },
   "home": {
     "meta": {
-      "title": "Jane Zhang | Senior Software Engineer Portfolio",
-      "description": "10+ years of experience building scalable systems and exceptional user experiences"
+      "title": "Jane Zhang | Senior Full-Stack Engineer Portfolio",
+      "description": "9+ years of experience specializing in full-stack development, AI/ML integration, and scalable platform architecture"
     }
   }
 }
