@@ -87,3 +87,43 @@ best-practices:
   label: Best Practices
   permalink: /best-practices
   description: Coding and software development best practices
+
+rag:
+  label: RAG
+  permalink: /rag
+  description: Retrieval-Augmented Generation systems
+
+advanced:
+  label: Advanced
+  permalink: /advanced
+  description: Advanced programming techniques and concepts
+
+langgraph:
+  label: LangGraph
+  permalink: /langgraph
+  description: LangGraph orchestration framework for multi-agent systems
+
+multi-agent-systems:
+  label: Multi-Agent Systems
+  permalink: /multi-agent-systems
+  description: Multi-agent AI architectures and coordination patterns
+
+hiring:
+  label: Hiring
+  permalink: /hiring
+  description: AI-powered hiring and recruitment systems
+
+langchain:
+  label: LangChain
+  permalink: /langchain
+  description: LangChain framework for building LLM applications
+
+fine-tuning:
+  label: Fine-Tuning
+  permalink: /fine-tuning
+  description: Fine-tuning machine learning and LLM models
+
+decision-framework:
+  label: Decision Framework
+  permalink: /decision-framework
+  description: Decision-making frameworks and methodologies

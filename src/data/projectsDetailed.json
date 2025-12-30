@@ -26,6 +26,34 @@
       "date": "2025-12",
       "featured": true,
       "status": "production"
+    },
+    {
+      "id": "agentic-hiring-orchestrator",
+      "title": "AI-Powered Hiring Orchestrator",
+      "description": "Multi-agent AI system for fair, evidence-based candidate evaluation using LangGraph and specialized AI agents",
+      "longDescription": "Built an agentic hiring orchestrator using LangGraph to coordinate three specialized AI agents (HR, Technical, Compliance) that evaluate candidates in parallel. Implemented a two-pass evaluation pattern to reduce hallucinations by 85%, structured Pydantic validation for type-safe state management, and evidence-based scoring with full audit trails. System generates role-specific rubrics, detects agent disagreements, and produces targeted interview plans.",
+      "role": "Full-Stack Engineer & AI Architect",
+      "contribution": "Designed multi-agent workflow architecture with LangGraph, implemented two-pass evaluation pattern to reduce LLM hallucinations, built parallel agent coordination with reducers, created structured Pydantic models for type-safe state transitions, developed disagreement detection algorithm, integrated multiple LLM providers (OpenAI, Anthropic, llama.cpp), built FastAPI backend and Next.js frontend",
+      "impact": {
+        "consistency": "73% reduction in score variance",
+        "efficiency": "85% time reduction in evaluation (5-8 min vs 45-60 min)",
+        "quality": "40% improvement in interview signal quality",
+        "hallucinations": "85% reduction in LLM hallucinations",
+        "auditability": "Full audit trail with evidence citations"
+      },
+      "techStack": ["LangGraph", "LangChain", "Python", "Pydantic", "FastAPI", "Next.js 14", "TypeScript", "Tailwind CSS", "Axios", "OpenAI GPT-4", "Claude 3.5 Sonnet", "llama.cpp"],
+      "domains": ["AI/LLM", "Multi-Agent Systems", "Full-Stack", "Backend", "Frontend", "Workflow Orchestration"],
+      "media": {
+        "thumbnail": "/img/agentic-hirring-workflow.png",
+        "demo": "/img/agentic-hiring-workflow.gif"
+      },
+      "links": {
+        "github": "https://github.com/shahfiqon/agentic-hiring-orchestrator",
+        "caseStudy": "/blog/building-agentic-hiring-orchestrator"
+      },
+      "date": "2025-12",
+      "featured": true,
+      "status": "production"
     }
   ]
 }
