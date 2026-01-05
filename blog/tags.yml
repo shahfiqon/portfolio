@@ -127,3 +127,18 @@ decision-framework:
   label: Decision Framework
   permalink: /decision-framework
   description: Decision-making frameworks and methodologies
+
+security:
+  label: Security
+  permalink: /security
+  description: Security best practices, encryption, and data protection
+
+encryption:
+  label: Encryption
+  permalink: /encryption
+  description: Encryption techniques and cryptographic implementations
+
+database:
+  label: Database
+  permalink: /database
+  description: Database design, optimization, and security
