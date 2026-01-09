@@ -118,11 +118,15 @@ const SoftskillCard: React.FC = () => {
             verticalAlign="bottom"
             height={36}
             iconType="circle"
-            formatter={(value, entry: any) => (
-              <span style={{ color: "var(--ifm-font-color-base)" }}>
-                {value}
-              </span>
-            )}
+            formatter={(value, entry: any) => {
+              // Get the skill name from the payload
+              const skillName = entry.payload?.skill || entry.payload?.name || value;
+              return (
+                <span style={{ color: "var(--ifm-font-color-base)" }}>
+                  {skillName}
+                </span>
+              );
+            }}
           />
         </PieChart>
       </ResponsiveContainer>
