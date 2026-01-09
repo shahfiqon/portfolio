@@ -14,7 +14,7 @@ export default function Experience() {
     >
       <main
         style={{
-          padding: "60px 20px",
+          padding: "100px 20px 60px 20px",
           maxWidth: "1200px",
           margin: "0 auto",
         }}

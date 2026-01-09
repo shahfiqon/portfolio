@@ -46,9 +46,11 @@ ${JSON.stringify(item, null, 2)}`,
 
 function NavbarContentLayout({
   left,
+  center,
   right,
 }: {
   left: ReactNode;
+  center: ReactNode;
   right: ReactNode;
 }) {
   return (
@@ -59,6 +61,12 @@ function NavbarContentLayout({
           'navbar__items',
         )}>
         {left}
+      </div>
+      <div
+        className={clsx(
+          'navbar__items navbar__items--center',
+        )}>
+        {center}
       </div>
       <div
         className={clsx(
@@ -79,27 +87,32 @@ export default function NavbarContent(): ReactNode {
 
   const searchBarItem = items.find((item) => item.type === 'search');
 
+  // Filter out HTML items (like resume button) from left items for center placement
+  const centerItems = leftItems.filter((item) => item.type !== 'html');
+  const resumeButtonItems = rightItems.filter((item) => item.type === 'html');
+
   return (
     <NavbarContentLayout
       left={
-        // TODO stop hardcoding items?
         <>
           {!mobileSidebar.disabled && <NavbarMobileSidebarToggle />}
           <NavbarLogo />
-          <NavbarItems items={leftItems} />
+        </>
+      }
+      center={
+        <>
+          <NavbarItems items={centerItems} />
         </>
       }
       right={
-        // TODO stop hardcoding items?
-        // Ask the user to add the respective navbar items => more flexible
         <>
-          <NavbarItems items={rightItems} />
           <NavbarColorModeToggle className={styles.colorModeToggle} />
           {!searchBarItem && (
             <NavbarSearch>
               <SearchBar />
             </NavbarSearch>
           )}
+          <NavbarItems items={resumeButtonItems} />
         </>
       }
     />

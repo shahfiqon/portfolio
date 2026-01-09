@@ -42,7 +42,7 @@ export default function ProjectPage() {
       >
         <main
           style={{
-            padding: "60px 20px",
+            padding: "100px 20px 60px 20px",
             textAlign: "center",
             minHeight: "50vh",
             display: "flex",
@@ -81,7 +81,7 @@ export default function ProjectPage() {
     >
       <main
         style={{
-          padding: "60px 20px",
+          padding: "100px 20px 60px 20px",
           maxWidth: "1400px",
           margin: "0 auto",
         }}

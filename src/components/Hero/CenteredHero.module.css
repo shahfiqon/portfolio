@@ -1,0 +1,255 @@
+/* Hero Section - Full Viewport Centered */
+.heroSection {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  padding: 2rem 1rem;
+  margin-top: 0;
+}
+
+/* 3D Background Container */
+.background3D {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  overflow: hidden;
+}
+
+/* Fallback background for SSR */
+.fallbackBackground {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    135deg,
+    #1a1a2e 0%,
+    #16213e 50%,
+    #1e2a4a 100%
+  );
+}
+
+[data-theme="light"] .fallbackBackground {
+  background: linear-gradient(
+    135deg,
+    #e8eaf6 0%,
+    #e1bee7 50%,
+    #f3e5f5 100%
+  );
+}
+
+/* Centered Content Container */
+.heroContent {
+  position: relative;
+  z-index: 10;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  max-width: 1200px;
+  width: 100%;
+}
+
+/* Greeting Badge */
+.greetingBadge {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 1.5rem;
+  border-radius: 50px;
+  background: rgba(20, 184, 166, 0.15);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(94, 234, 212, 0.2);
+  box-shadow: 0 0 30px rgba(94, 234, 212, 0.1);
+  margin-bottom: 0.5rem;
+}
+
+.greetingBadge::before {
+  content: '';
+  position: absolute;
+  inset: -2px;
+  border-radius: 50px;
+  background: linear-gradient(
+    45deg,
+    rgba(94, 234, 212, 0.3),
+    rgba(20, 184, 166, 0.1)
+  );
+  z-index: -1;
+  filter: blur(8px);
+  opacity: 0.6;
+}
+
+.greetingBadge span {
+  font-size: clamp(0.875rem, 1.5vw, 1rem);
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 500;
+  letter-spacing: 0.05em;
+}
+
+/* Gradient Name with Animated Background */
+.gradientName {
+  font-size: clamp(2.5rem, 8vw, 6rem);
+  font-weight: 700;
+  line-height: 1.1;
+  margin: 0;
+  background: linear-gradient(
+    90deg,
+    #a855f7 0%,
+    #ec4899 20%,
+    #14b8a6 40%,
+    #a855f7 60%,
+    #ec4899 80%,
+    #14b8a6 100%
+  );
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientColorShift 4s linear infinite;
+  position: relative;
+}
+
+@keyframes gradientColorShift {
+  0% {
+    background-position: 0% center;
+  }
+  100% {
+    background-position: 200% center;
+  }
+}
+
+/* Typing Container */
+.typingContainer {
+  min-height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0;
+}
+
+.typingText {
+  font-size: clamp(1.25rem, 3vw, 2rem);
+  color: rgba(160, 160, 160, 0.9);
+  font-weight: 400;
+  letter-spacing: 0.02em;
+}
+
+.cursor {
+  display: inline-block;
+  margin-left: 4px;
+  color: #14b8a6;
+  font-weight: 300;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%, 50% {
+    opacity: 1;
+  }
+  51%, 100% {
+    opacity: 0;
+  }
+}
+
+/* CTA Button */
+.ctaButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.875rem 2rem;
+  background: #14b8a6;
+  color: #000000 !important;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: clamp(0.95rem, 1.5vw, 1rem);
+  text-decoration: none;
+  transition: all 0.2s ease;
+  margin-top: 1rem;
+  box-shadow: 0 4px 14px rgba(20, 184, 166, 0.3);
+  border: none;
+  cursor: pointer;
+}
+
+.ctaButton:hover {
+  background: #0d9488;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(20, 184, 166, 0.4);
+  color: #000000 !important;
+  text-decoration: none;
+}
+
+.ctaButton:active {
+  transform: translateY(0);
+}
+
+/* Ensure black text in both dark and light modes */
+[data-theme="dark"] .ctaButton {
+  color: #000000 !important;
+}
+
+[data-theme="dark"] .ctaButton:hover {
+  color: #000000 !important;
+}
+
+[data-theme="light"] .ctaButton {
+  color: #000000 !important;
+}
+
+[data-theme="light"] .ctaButton:hover {
+  color: #000000 !important;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .heroSection {
+    padding: 1.5rem 1rem;
+  }
+
+  .heroContent {
+    gap: 1.25rem;
+  }
+
+  .greetingBadge {
+    padding: 0.625rem 1.25rem;
+    margin-bottom: 0.25rem;
+  }
+
+  .typingContainer {
+    min-height: 2.5rem;
+    margin: 0.75rem 0;
+  }
+
+  .ctaButton {
+    padding: 0.75rem 1.75rem;
+    margin-top: 0.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .heroContent {
+    gap: 1rem;
+  }
+
+  .greetingBadge {
+    padding: 0.5rem 1rem;
+  }
+
+  .typingContainer {
+    min-height: 2rem;
+  }
+}
+
+/* Dark mode adjustments */
+[data-theme="light"] .typingText {
+  color: rgba(180, 180, 180, 0.9);
+}
+
+[data-theme="light"] .greetingBadge span {
+  color: rgba(240, 240, 240, 0.95);
+}

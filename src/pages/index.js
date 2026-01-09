@@ -10,10 +10,12 @@ import Heading from "@theme/Heading";
 import styles from "./index.module.css";
 
 //for dashboard
-import DashboardHero from "../components/dashboard/DashboardHero";
+import CenteredHero from "../components/Hero/CenteredHero";
 import { getDashboardData } from "../utils/dashboardConfig";
 import DashboardAnalytics from "../components/Dashboard/DashboardAnalytics";
 import SocialSidebar from "../components/SocialSidebar/SocialSidebar";
+import personalData from "../data/personal.json";
+import FeaturedProjects from "../components/Projects/FeaturedProjects";
 
 export default function Home() {
   const { siteConfig } = useDocusaurusContext();
@@ -36,8 +38,15 @@ export default function Home() {
       </Head>
       <SocialSidebar />
       <main className={styles.dashboardPage}>
+        <CenteredHero
+          greeting="Hello, I am"
+          name={personalData.name}
+          labels={data.hero.labels}
+          ctaText={data.hero.ctaText}
+          ctaLink={data.hero.ctaLink}
+        />
         <div className={styles.dashboardContent}>
-          <DashboardHero {...data.hero} />
+          <FeaturedProjects />
           <DashboardAnalytics />
         </div>
       </main>

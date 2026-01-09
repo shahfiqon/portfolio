@@ -16,7 +16,7 @@ export type SkillDatum = {name:string, value:number};
 
 export interface DashboardData{
     nav:NavLink[];
-    hero:{title:string;subtitle:string,ctaText:string,ctaLink:string};
+    hero:{title:string;subtitle:string,labels:string[],ctaText:string,ctaLink:string};
     kips:KPI[];
     exprience:ExperienceItem[];
     
@@ -28,6 +28,7 @@ const fallback:DashboardData={
     hero:{
         title:'Loading',
         subtitle:'Loading',
+        labels:[],
         ctaText:'Loading Please wait!',
         ctaLink:'Loading Link Please wait!'
     },

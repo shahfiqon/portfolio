@@ -157,28 +157,28 @@ export const navbarItems: NavItem[] = [
   {
     label: 'Home',
     to: '/',
-    position: 'right',
+    position: 'left',
     activeBaseRegex: '^/$',
   },
   {
     label: 'About',
     to: '/about',
-    position: 'right',
+    position: 'left',
   },
   {
     label: 'Experience',
     to: '/experience',
-    position: 'right',
+    position: 'left',
   },
   {
     label: 'Projects',
     to: '/projects',
-    position: 'right',
+    position: 'left',
   },
   {
     label: 'Blogs',
     to: '/blog',
-    position: 'right',
+    position: 'left',
   },
 ];
 

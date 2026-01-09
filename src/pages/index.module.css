@@ -1,11 +1,16 @@
 .dashboardPage {
-  min-height: calc(100vh - 60px);
+  width: 100%;
   background: var(--ifm-background-color);
+  margin-top: 0;
+  padding-top: 0;
 }
 
 .dashboardContent {
   width: 100%;
   padding-bottom: 60px;
+  padding-top: 80px;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 /* Smooth scroll for anchor links */
@@ -15,17 +20,15 @@ html {
 
 /* Responsive spacing */
 @media (max-width: 996px) {
-  .dashboardPage {
-    min-height: auto;
-  }
-
   .dashboardContent {
     padding-bottom: 40px;
+    padding-top: 60px;
   }
 }
 
 @media (max-width: 576px) {
   .dashboardContent {
     padding-bottom: 30px;
+    padding-top: 40px;
   }
 }

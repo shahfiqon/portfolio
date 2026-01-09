@@ -9,6 +9,13 @@
   "hero": {
     "title": "Hi, I'm Jane Zhang",
     "subtitle": "Senior Full-Stack Engineer with 9+ years specializing in full-stack development, AI/ML integration, and scalable platform architecture. Expert in React, TypeScript, FastAPI, PostgreSQL, and cloud infrastructure.",
+    "labels": [
+      "GenAI Engineer",
+      "Backend Engineer",
+      "Full Stack Developer",
+      "ML Engineer",
+      "Software Architect"
+    ],
     "ctaText": "View Projects",
     "ctaLink": "/projects"
   },

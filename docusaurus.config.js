@@ -88,6 +88,7 @@ const config = {
         respectPrefersColorScheme: true,
       },
       navbar: {
+        hideOnScroll: true,
         logo: {
           alt: "Phoenix Logo",
           src: "/img/logo.svg",

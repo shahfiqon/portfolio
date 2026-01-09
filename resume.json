@@ -1,0 +1,282 @@
+{
+    "basics": {
+      "name": "Jane Zhang",
+      "label": "Senior Full-Stack Engineer",
+      "email": "jane1907476@gmail.com",
+      "summary": "I am a Senior Full-Stack Engineer with 9+ years of experience specializing in full-stack development, AI/ML integration, and scalable platform architecture, with expertise in React, TypeScript, FastAPI, PostgreSQL, and cloud infrastructure. My focus has been on building end-to-end platforms from scratch, leading technical architecture decisions, and integrating Gen AI capabilities into production systems. 9+ years in Full-Stack Development, Software Architecture, and Technical Leadership. 5+ years in AI/ML Integration, Gen AI, LLM Orchestration, and Vector Databases. 4+ years in Cloud Infrastructure (AWS, Docker, Kubernetes) and DevOps. In terms of programming skills, I am proficient in Python, TypeScript, JavaScript, and SQL. Additionally, I have extensive experience with modern web frameworks including React, FastAPI, and various AI/ML libraries including OpenAI, LangChain, and Hugging Face.",
+      "location": {
+        "address": "",
+        "postalCode": "",
+        "city": "Bitola",
+        "countryCode": "North Macedonia",
+        "region": "North Macedonia"
+      },
+      "profiles": [
+        {
+            "network": "LinkedIn",
+            "username": "janezhang",
+            "url": "https://www.linkedin.com/in/jane-zhang-840033397/"
+        },
+        {
+            "network": "GitHub",
+            "username": "shahfiqon",
+            "url": "https://github.com/shahfiqon"
+        }
+      ]
+    },
+    "work": [
+      {
+        "company": "Bittensor Network",
+        "position": "Decentralized AI Miner | ML Engineer",
+        "startDate": "2025-01-01",
+        "summary": "Working on decentralized AI mining and ML engineering, deploying and optimizing LLM models across multiple subnets, implementing distributed training pipelines, and building monitoring and security infrastructure.",
+        "highlights": [
+          "Deployed fine-tuned Llama-3-8B model on Subnet 1 (Prompting) using vLLM inference server on NVIDIA A100 (80GB), achieving 0.43s average response latency for conversational AI tasks and ranking top-12% among 342 active miners with 8.7 TAO monthly emissions",
+          "Implemented gradient synchronization pipeline for Subnet 38 (Decentralized Training) using PyTorch DDP and butterfly all-reduce to co-train 1B parameter GPT-2 model across 8 geographically distributed nodes, reducing communication overhead by 31% compared to ring all-reduce",
+          "Built automated subnet registration system using Python bittensor SDK and exponential moving average algorithm to monitor registration costs, capturing optimal entry windows (within 2.1 TAO threshold) and reducing registration expenses by 67% across 6 subnet deployments",
+          "Engineered LoRA fine-tuning pipeline for Subnet 96 (FLock OFF) using Hugging Face PEFT library and Weights & Biases tracking, training domain-specific adapters (rank=16, alpha=32) on 42K instruction samples with 91.3% task accuracy improvement",
+          "Optimized logical reasoning model for Subnet 35 (LogicNet) by implementing chain-of-thought prompting and self-consistency decoding on 4x NVIDIA RTX 4090 (24GB VRAM each), achieving 87.2% accuracy on MATH and GSM8K benchmarks",
+          "Contributed to Subnet 81 (Grail) collaborative training by implementing ZeRO Stage 3 optimization with DeepSpeed, enabling efficient training of 7B parameter models with per-device batch size of 4 and gradient checkpointing to manage memory constraints",
+          "Developed custom validator score prediction model using XGBoost on historical emission data (15K+ query-response pairs), achieving 0.82 Pearson correlation with actual validator rankings and enabling proactive model switching decisions",
+          "Designed real-time monitoring dashboard using Prometheus, Grafana, and FastAPI to track metagraph state updates, validator weights, registration costs, and node health metrics across 6 active subnet miners with 99.4% uptime",
+          "Implemented adversarial robustness testing using TextAttack framework to evaluate Subnet 1 model outputs against synonym substitution and word deletion attacks, improving defense success rate from 73% to 91% through adversarial training",
+          "Established secure coldkey/hotkey management using HashiCorp Vault with automated rotation policies (30-day cycles), hardware wallet integration for coldkey storage, and encrypted backup procedures following BIP39 mnemonic standards"
+        ]
+      },
+      {
+        "company": "BuiltMighty",
+        "position": "Senior Full-Stack Engineer",
+        "startDate": "2021-09-01",
+        "endDate": "2024-12-31",
+        "summary": "Architected and led development of full-stack location intelligence platform from scratch, establishing technical direction and leading 2 engineers. Built RAG-powered business intelligence features, geospatial analytics dashboards, AI-powered vector search, and comprehensive MLOps platform with Gen AI capabilities.",
+        "highlights": [
+          "Architected and led development of full-stack location intelligence platform from scratch, establishing technical direction and leading 2 engineers: React TypeScript frontend with Material-UI, FastAPI backend with PostgreSQL/PostGIS, JWT authentication, making architecture decisions on data modeling and API design, reducing site selection time by 70% and increasing user engagement by 45% within 3 months",
+          "Established RESTful API architecture standards and patterns, leading design decisions on FastAPI and Django implementation: OpenAPI documentation, request validation, and error handling, containerized with Docker and deployed on cloud infrastructure, mentoring team on API design best practices, achieving sub-200ms response times and supporting rapid feature iteration",
+          "Led cross-functional team to deliver RAG-powered business intelligence feature in 2 weeks, making technical decisions on vector database selection and LLM orchestration: React TypeScript chatbot interface, FastAPI REST endpoints, Pinecone vector database integration, OpenAI GPT-4 and Claude 3 LLM orchestration via LangChain, collaborating with product and design teams on UX, processing 10K+ queries daily with 92% user satisfaction",
+          "Developed full-stack geospatial analytics dashboard: React application with Mapbox GL JS and Chart.js, FastAPI endpoints for spatial queries using PostGIS, SQLAlchemy ORM, Redis caching reducing query latency by 60%, integrated Google Places and SafeGraph APIs, shipped in 3 weeks with direct user feedback integration",
+          "Created complete location scoring feature end-to-end: React form components with validation, FastAPI endpoints with Pydantic models, PostgreSQL schema design with migrations, ML model integration via direct API calls and lightweight model serving, deployed with 95% test coverage, shipped in 1 week",
+          "Owned production data processing workflow end-to-end, including on-call rotation and incident response: React admin interface, FastAPI job orchestration, PySpark for distributed processing with Delta Lake on cloud storage, lightweight workflow orchestration, PostgreSQL job tracking, WebSocket real-time updates, debugging and resolving production issues, processing 100K+ records daily with automated error recovery",
+          "Led design and production ownership of business data ingestion system, handling scaling challenges and technical debt: React monitoring dashboard, FastAPI REST API with rate limiting, PostgreSQL audit logging, Python scrapers with async processing, PySpark for batch processing, LLM-powered data validation using OpenAI API, refactoring legacy components and optimizing for scale, processing 100K+ business records per day with cost-effective error handling",
+          "Built intelligent data enrichment feature using Gen AI: React interface for review workflows, FastAPI async endpoints, PostgreSQL with JSONB for flexible storage, PySpark for data transformation, OpenAI GPT-4 for categorization and content generation, embeddings pipeline, achieving 95%+ accuracy and reducing manual work by 80%",
+          "Created AI-powered PDF report generation system: React report builder, FastAPI endpoints, PostgreSQL for templates, Gen AI integration using GPT-4 for automated narrative generation, Puppeteer rendering, Chart.js and Mapbox visualizations, cloud storage integration, generating 5K+ reports monthly with 60% reduction in manual content",
+          "Designed AI-powered vector search feature: React search interface, FastAPI REST endpoints, Pinecone vector database with hybrid search, PostgreSQL metadata storage, OpenAI and Cohere embeddings, LLM-powered query understanding, enabling semantic search with <100ms response time",
+          "Built real-time market creation application: React TypeScript app with Mapbox GL JS for interactive editing, WebSocket API for collaboration, FastAPI async backend, PostGIS spatial database, Redis caching, supporting 50+ concurrent users with <50ms latency, shipped MVP in 2 weeks",
+          "Developed progressive web application: React TypeScript with React Router, React Query for state management, Material-UI components, custom hooks, Workbox for offline PWA, achieving 90+ Lighthouse score and 40% increase in mobile engagement, iterated based on user analytics",
+          "Implemented full-stack authentication system: React login/signup forms, FastAPI JWT endpoints with refresh tokens, PostgreSQL user database with bcrypt, role-based access control, OAuth2 integration, supporting 10K+ users with zero security incidents, built and deployed in 1 week",
+          "Established RESTful API architecture patterns and standards, leading technical decisions on service design: Multiple endpoints across modular services, OpenAPI documentation, Pydantic validation, consistent error handling, rate limiting and auth middleware, setting code review standards and mentoring engineers on API design, achieving <150ms response times, designed for rapid feature addition and iteration",
+          "Led database architecture and schema design decisions, establishing migration practices: PostgreSQL design with multiple tables, SQLAlchemy ORM models, Alembic migrations, making trade-off decisions on indexing strategy improving performance by 70%, connection pooling, optimized for startup-scale growth and quick schema evolution, mentoring team on database best practices",
+          "Developed AI agent system for business insights: React dashboard for configuration, FastAPI backend with LangChain agents and LangGraph workflows, multi-agent orchestration, LLM-powered decision making using GPT-4 and Claude 3, PostgreSQL for state, Redis caching, processing complex queries with 85% accuracy",
+          "Built PySpark-based data analytics pipeline: React interface for queries, FastAPI job endpoints, PySpark processing large datasets with Delta Lake, distributed ML with MLlib, Spark streaming, PostgreSQL for metadata, reducing processing time by 75% with cost-effective cloud infrastructure",
+          "Led development of Gen AI code generation tools, mentoring 2 junior engineers on React and FastAPI patterns: React interface for prompt-based generation, FastAPI endpoints with GitHub Copilot API integration, LLM-powered test generation and documentation, PostgreSQL for tracking, conducting code reviews and establishing coding standards, reducing boilerplate by 50% and improving team productivity",
+          "Architected and implemented zero-downtime deployment infrastructure, leading DevOps initiatives and establishing CI/CD standards: GitHub Actions pipelines with blue-green and canary deployment strategies, automated rollback mechanisms, health checks and readiness probes, container orchestration with Docker and Kubernetes, Jest and React Testing Library tests, pytest for API tests, Cypress E2E tests, integration testing, setting testing standards and code review processes, achieving 99.9% uptime during deployments and reducing deployment time by 75% while enabling daily releases",
+          "Built MLOps platform with Gen AI capabilities: React admin interface, FastAPI endpoints for model management, LLM fine-tuning and inference optimization, PySpark for feature engineering, PostgreSQL for model versioning, cloud storage, supporting multiple production models including fine-tuned LLMs with A/B testing and prompt versioning",
+          "Designed and implemented comprehensive observability and monitoring infrastructure, leading production reliability initiatives: Grafana dashboards for real-time system metrics and business KPIs, Prometheus for metrics collection and alerting, custom exporters for application and infrastructure monitoring, alerting rules and on-call escalation policies, distributed tracing for request flows, log aggregation and analysis, reducing MTTR by 60% and enabling proactive issue detection before user impact",
+          "Architected and implemented zero-trust security platform, establishing security standards and leading security initiatives: Identity and access management with role-based access control (RBAC), service-to-service authentication using mTLS, network segmentation and micro-segmentation policies, continuous security monitoring and threat detection, API gateway with rate limiting and DDoS protection, secrets management and rotation, security audit logging and compliance reporting, achieving zero security incidents and passing SOC 2 Type II audit requirements"
+        ]
+      },
+      {
+        "company": "FlintAI",
+        "position": "Full-Stack Engineer",
+        "startDate": "2020-09-01",
+        "endDate": "2021-08-31",
+        "summary": "Architected and developed full-stack authorship determination platform from scratch, building document analysis systems, AI content detection APIs, plagiarism detection engines, and multi-tenant SaaS platform architecture for academic integrity.",
+        "highlights": [
+          "Architected and developed full-stack authorship determination platform from scratch: React frontend dashboard with real-time analysis visualizations, FastAPI REST API backend with PostgreSQL for document metadata and user management, AWS SageMaker integration for ML model inference, processing 500,000+ document analyses daily with 94% accuracy, establishing technical foundation for the platform",
+          "Built end-to-end document analysis system: React TypeScript frontend for document upload and results display, FastAPI async endpoints with request validation and error handling, Apache Airflow workflow orchestration, AWS EMR for distributed processing, PostgreSQL schema design for storing linguistic features and analysis results, enabling automated authorship attribution across diverse document types",
+          "Developed real-time AI content detection API service: FastAPI REST endpoints with sub-200ms latency, AWS Lambda serverless functions for cost-effective scaling, React admin dashboard for monitoring request metrics and system health, PostgreSQL for caching detection results, handling 100,000+ detection requests daily for academic institutions and publishers",
+          "Created full-stack plagiarism detection engine: React search interface with advanced filtering, FastAPI REST API with rate limiting and authentication, AWS Elasticsearch integration for document similarity search, PostgreSQL for metadata storage, text similarity algorithms (TF-IDF, cosine similarity) implemented in Python, detecting 40,000+ instances of potential plagiarism monthly",
+          "Designed and implemented multi-tenant SaaS platform architecture: React frontend with role-based access control, FastAPI backend with tenant isolation middleware, AWS ECS container orchestration, RDS PostgreSQL with row-level security, S3 for document storage, complete data isolation and FERPA/GDPR compliance, primarily working on CollegeBoard implementation enabling scalable processing for academic integrity needs",
+          "Built real-time document analysis dashboard: React application with Chart.js visualizations for authorship confidence scores and linguistic features, FastAPI GraphQL and REST endpoints, AWS API Gateway for request routing, WebSocket connections for live updates, PostgreSQL for storing analysis history, improving client decision-making speed by 50%",
+          "Developed comprehensive RESTful API architecture: FastAPI endpoints with OpenAPI documentation, Pydantic models for request/response validation, JWT authentication with refresh tokens, rate limiting middleware, PostgreSQL database with optimized queries, AWS API Gateway integration, enabling seamless integration with client learning management systems and content platforms",
+          "Implemented document processing and ingestion pipeline: React admin interface for monitoring pipeline health, FastAPI job orchestration endpoints, AWS Kinesis for real-time document streaming, Python workers for text normalization and metadata extraction, PostgreSQL for job tracking and status updates, processing documents from email, file uploads, and API submissions, handling 10TB+ of text data monthly",
+          "Created automated reporting system: React report builder interface with drag-and-drop components, FastAPI endpoints for report generation, PostgreSQL for template storage, Python report generation engine with AWS S3 storage, generating detailed analysis reports with linguistic evidence, confidence scores, and visualizations, improving client trust and transparency by 45%",
+          "Architected and deployed containerized infrastructure: Docker containerization for all services, Kubernetes on AWS EKS for orchestration, CI/CD pipelines with automated testing, PostgreSQL database with automated backups, monitoring and logging with CloudWatch, enabling zero-downtime deployments and processing 10TB+ of text data monthly",
+          "Built feature extraction and comparison engine: FastAPI endpoints for fingerprint creation and matching, PostgreSQL schema design for storing linguistic fingerprints (n-gram patterns, sentence complexity, punctuation usage), AWS S3 for large-scale document storage, optimized database queries with indexing strategies, reducing analysis time by 70%",
+          "Developed contract cheating detection system: React admin dashboard for reviewing flagged submissions, FastAPI ML inference endpoints, AWS SageMaker model integration, PostgreSQL for storing student submissions and detection results, automated alerting system, reducing academic dishonesty cases by 65% for educational clients",
+          "Implemented security and compliance infrastructure: React frontend with role-based UI rendering, FastAPI authentication middleware with OAuth2 and API keys, AWS KMS for encryption at rest and in transit, PostgreSQL audit logging, comprehensive access controls, regular security audits, ensuring FERPA and GDPR compliance for educational institutions",
+          "Optimized cloud infrastructure costs: Implemented intelligent caching layer using Redis for frequently accessed linguistic models, AWS spot instances for batch analysis jobs, auto-scaling policies for Lambda functions, PostgreSQL connection pooling, reducing cloud infrastructure costs by 40% annually while maintaining performance",
+          "Built document ingestion preprocessing pipeline: React upload interface with drag-and-drop, FastAPI async endpoints for file handling, AWS Kinesis for real-time processing, Python workers for text extraction from PDF, Word, and plain text, PostgreSQL for metadata storage, normalizing text and extracting metadata for downstream analysis"
+        ]
+      },
+      {
+        "company": "LevelAccess",
+        "position": "Full-Stack Engineer",
+        "startDate": "2015-09-01",
+        "endDate": "2020-08-31",
+        "summary": "Refactored and enhanced core accessibility testing engine, developed comprehensive Angular design system library, built automated accessibility testing pipelines, and created multi-tenant accessibility monitoring platform for digital accessibility compliance.",
+        "highlights": [
+          "Refactored and enhanced the core accessibility testing engine using Python, Flask, and SQLAlchemy, combining automated scanning with manual expert evaluation workflows, improving scan accuracy by 40% and reducing false positive rates by 35%, enabling more reliable WCAG 2.1/2.2 AA/AAA compliance detection",
+          "Developed a comprehensive Angular design system library with full WCAG 2.1/2.2 compliance, implementing ARIA attributes, keyboard navigation, and screen reader support, improving product accessibility score from 80% to 95% across all components",
+          "Built an automated accessibility testing pipeline using Python, Selenium, and axe-core, integrating with CI/CD workflows to catch accessibility issues early in development, reducing remediation costs by 50% for clients and supporting testing against multiple WCAG versions and conformance levels",
+          "Created a real-time accessibility dashboard using Python, Flask, Angular, and MySQL, providing clients with live compliance metrics, violation tracking, and remediation progress across multiple accessibility standards (WCAG 2.1, WCAG 2.2, Section 508, EN 301 549), improving client satisfaction scores by 30%",
+          "Implemented a mobile-responsive, fully accessible navigation component in Angular with WCAG 2.1 AA compliance, supporting keyboard navigation, screen readers, and high contrast modes, serving as a template for all platform components",
+          "Developed an AI-powered accessibility issue prioritization system using Python, machine learning models, and AWS SageMaker, automatically categorizing and ranking violations by severity and impact, reducing manual review time by 60% and improving remediation efficiency",
+          "Built integration workflows with Jira and Asana using Python REST APIs, automatically creating tickets for accessibility violations and tracking remediation progress, streamlining client workflows and doubling annual customer acquisition",
+          "Implemented feature flagging system using Harness and AWS, enabling gradual rollout of accessibility improvements and A/B testing of remediation strategies, reducing deployment risks and improving feature adoption rates",
+          "Created a comprehensive accessibility testing API using Python, FastAPI, and AWS Lambda, enabling third-party integrations and programmatic access to testing capabilities, expanding platform reach to 200+ partner organizations",
+          "Developed automated VPAT (Voluntary Product Accessibility Template) and ACR (Accessibility Conformance Report) generation system using Python, template engines, and AWS Lambda, automatically generating compliance reports for procurement requirements, reducing manual report creation time from 2 weeks to 2 days",
+          "Built a multi-tenant accessibility monitoring platform using Python, Flask, and AWS RDS, enabling clients to track compliance across multiple websites and applications with ongoing monitoring, processing 10,000+ scans daily with 99.9% uptime and supporting unlimited validation testing",
+          "Implemented advanced screen reader testing automation using Python, NVDA, and JAWS APIs, simulating real-world assistive technology usage and identifying issues missed by automated scanners, improving test coverage by 45% through combined automated and manual testing approaches",
+          "Created LevelAccess Academy training and certification module using Python, Angular, and AWS S3, delivering interactive on-demand courses mapped to various roles (developers, designers, content creators), tracking completion and certification, increasing client team accessibility knowledge and reducing repeat violations by 55%",
+          "Developed a Chrome extension and Figma plugin integration using TypeScript, React, and AWS API Gateway, enabling designers and developers to test accessibility in real-time during design and development phases, catching issues 80% earlier in the workflow",
+          "Built a comprehensive reporting system using Python, PostgreSQL, and Angular, generating detailed accessibility audit reports with visualizations, compliance scores, actionable remediation roadmaps, and VPAT/ACR documentation, improving client engagement and retention by 40%",
+          "Prioritized security throughout the platform by implementing secure client data handling with encryption at rest and in transit, secure API authentication and authorization, regular security audits and vulnerability assessments, SOC 2 compliance, and secure integrations with client systems, protecting sensitive accessibility audit data for enterprise clients",
+          "Implemented legal services integration module using Python, AWS Lambda, and document management systems, enabling digital accessibility lawyers to assist clients with ADA demand letters, lawsuit navigation, and risk mitigation strategies, providing end-to-end compliance and legal support",
+          "Created continuous monitoring and alerting system using Python, AWS CloudWatch, and EventBridge, automatically scanning client websites for new accessibility violations and sending proactive notifications, helping clients maintain compliance and avoid legal risks with ongoing support"
+        ]
+      }
+    ],
+    "education": [
+      {
+        "institution": "Northeastern University in China",
+        "area": "Computer Science",
+        "studyType": "Bachelor's degree of",
+        "startDate": "2010",
+        "endDate": "2014"
+      }
+    ],
+    "skills": [
+      {
+        "name": "Frontend Development",
+        "level": "Expert",
+        "keywords": [
+          "React",
+          "TypeScript",
+          "JavaScript",
+          "Material-UI",
+          "Chart.js",
+          "Mapbox GL JS",
+          "React Router",
+          "React Query",
+          "Angular",
+          "Vue.js"
+        ]
+      },
+      {
+        "name": "Backend Development",
+        "level": "Expert",
+        "keywords": [
+          "FastAPI",
+          "Flask",
+          "Python",
+          "REST APIs",
+          "GraphQL",
+          "WebSocket",
+          "OpenAPI",
+          "Pydantic",
+          "SQLAlchemy",
+          "JWT",
+          "OAuth2",
+          "gRPC"
+        ]
+      },
+      {
+        "name": "Databases",
+        "level": "Expert",
+        "keywords": [
+          "PostgreSQL",
+          "PostGIS",
+          "MySQL",
+          "RDS",
+          "Redis",
+          "Pinecone",
+          "Elasticsearch",
+          "MongoDB",
+          "Delta Lake"
+        ]
+      },
+      {
+        "name": "AI/ML",
+        "level": "Expert",
+        "keywords": [
+          "OpenAI GPT-4",
+          "Claude 3",
+          "LangChain",
+          "LangGraph",
+          "Hugging Face",
+          "BERT",
+          "RoBERTa",
+          "LLAMA",
+          "vLLM",
+          "PyTorch",
+          "TensorFlow",
+          "PySpark MLlib",
+          "AWS SageMaker",
+          "Vertex AI",
+          "Weights & Biases",
+          "DeepSpeed",
+          "ZeRO",
+          "LoRA",
+          "PEFT"
+        ]
+      },
+      {
+        "name": "Cloud Platforms",
+        "level": "Expert",
+        "keywords": [
+          "AWS",
+          "EC2",
+          "RDS",
+          "S3",
+          "Lambda",
+          "ECS",
+          "EKS",
+          "EMR",
+          "Kinesis",
+          "API Gateway",
+          "CloudWatch",
+          "SageMaker",
+          "GCP",
+          "Vertex AI",
+          "GCS",
+          "BigQuery"
+        ]
+      },
+      {
+        "name": "DevOps & Infrastructure",
+        "level": "Expert",
+        "keywords": [
+          "Docker",
+          "Kubernetes",
+          "GitHub Actions",
+          "CI/CD",
+          "Prometheus",
+          "Grafana",
+          "Terraform",
+          "HashiCorp Vault"
+        ]
+      },
+      {
+        "name": "Programming Languages",
+        "level": "Expert",
+        "keywords": [
+          "Python",
+          "TypeScript",
+          "JavaScript",
+          "SQL",
+          "PySpark"
+        ]
+      },
+      {
+        "name": "Testing & Quality",
+        "level": "Expert",
+        "keywords": [
+          "Jest",
+          "React Testing Library",
+          "pytest",
+          "Cypress",
+          "Selenium",
+          "Integration Testing",
+          "E2E Testing"
+        ]
+      }
+    ],
+    "languages": [
+      {
+        "language": "English"
+      },
+      {
+        "language": "Chinese"
+      }
+    ]
+}
